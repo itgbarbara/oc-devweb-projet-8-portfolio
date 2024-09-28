@@ -1,0 +1,98 @@
+// Variables :
+$main-color: #FF6060;
+$background-color: #F6F6F6;
+
+// Mixins :
+
+    // Media queries
+
+@mixin for-smartphones {
+    @media (max-width: 375px) {
+        @content;
+    }
+}
+
+@mixin for-small-tablets {
+    @media (max-width: 599px) {
+        @content;
+    }
+}
+
+@mixin for-tablets {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+
+@mixin for-desktop {
+    @media (max-width: 1440px) {
+        @content;
+    }
+}
+
+    // Police
+
+@mixin font-18px-500 {
+    font-size: 1.13rem;
+    font-weight: 500;
+}
+
+    // Mise en page
+
+@mixin main-layout {
+    max-width: 1440px;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: auto;
+
+    @include for-desktop {
+        padding-right: 7%; // 100px
+        padding-left: 7%; // 100px
+    }
+
+    @include for-smartphones {
+        padding-right: 5.3%; // 20px
+        padding-left: 5.3%; // 20px
+    }
+}
+
+@mixin main-margin-bottom {
+    margin-bottom: 2.5rem;
+
+    @include for-tablets {
+        margin-bottom: 1.5rem;
+    }
+
+    @include for-smartphones {
+        margin-bottom: 0.6rem;
+    }
+}
+
+    // Disposition
+
+@mixin column-display {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin centered-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin centered-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
