@@ -7,16 +7,16 @@ const Header = () => {
     <header className="header">
       <nav className="header__navbar">
         <ul className="navlinks">
-          <HashLink to="/#about">
+          <HashLink to="/#about" className="navlinks__link">
             <li>Présentation</li>
           </HashLink>
-          <HashLink to="/#skills">
+          <HashLink to="/#skills" className="navlinks__link">
             <li>Compétences</li>
           </HashLink>
-          <HashLink to="/#portfolio">
+          <HashLink to="/#portfolio" className="navlinks__link">
             <li>Portfolio</li>
           </HashLink>
-          <HashLink to="/#contact">
+          <HashLink to="/#contact" className="navlinks__link">
             <li>Contact</li>
           </HashLink>
         </ul>
