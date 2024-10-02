@@ -3,8 +3,8 @@ import ProjectCards from './ProjectCards'
 
 const Porfolio = () => {
   return (
-    <section id="portfolio">
-      <h2>Ceci est ma section portfolio</h2>
+    <section id="portfolio" className="homepage-section">
+      <h2 className="homepage-section__title">Portfolio</h2>
       <ProjectCards />
     </section>
   )

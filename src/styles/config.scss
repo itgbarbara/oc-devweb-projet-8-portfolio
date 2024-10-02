@@ -1,5 +1,5 @@
 // Variables :
-$main-color: #FF6060;
+$main-color: #7E5E3A;
 $background-color: #F6F6F6;
 
 // Mixins :
@@ -83,8 +83,13 @@ $background-color: #F6F6F6;
 
 @mixin centered-row {
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+}
+
+@mixin space-between-row {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 

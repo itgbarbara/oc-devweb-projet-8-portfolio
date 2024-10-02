@@ -8,10 +8,13 @@ const Header = () => {
       <nav className="header__navbar">
         <ul className="navlinks">
           <HashLink to="/#about" className="navlinks__link">
-            <li>Présentation</li>
+            <li>Profil</li>
           </HashLink>
           <HashLink to="/#skills" className="navlinks__link">
             <li>Compétences</li>
+          </HashLink>
+          <HashLink to="/#training" className="navlinks__link">
+            <li>Parcours</li>
           </HashLink>
           <HashLink to="/#portfolio" className="navlinks__link">
             <li>Portfolio</li>
