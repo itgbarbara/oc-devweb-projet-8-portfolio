@@ -3,11 +3,13 @@
 @import './layout.scss';
 @import './header.scss';
 @import './footer.scss';
+@import './section.scss';
+@import './projectCards.scss';
 
-// @font-face {
-//     font-family: 'Montserrat';
-//     src: url(../../assets/fonts/Montserrat-Regular.ttf);
-// }
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
 
 * {
     padding: 0;
@@ -20,7 +22,7 @@ body {
     width: 100%;
     min-height: 100vh;
     background-color: white;
-    // font-family: 'Montserrat'
+    font-family: 'Roboto'
 }
 
 a {
@@ -41,8 +43,4 @@ button {
     background-color: transparent;
     border: none;
     cursor: pointer;
-}
-
-section {
-    height: 700px;
 }
