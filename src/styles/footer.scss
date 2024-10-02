@@ -1,7 +1,7 @@
 @import './config.scss';
 
 .footer {
-    @include centered-column;
+    @include space-between-row;
     width: 100%;
     color: white;
     background-color: black;
@@ -16,5 +16,31 @@
     @include for-smartphones {
         font-size: 0.75rem;
         padding: 50px 120px 50px 120px;
+    }
+
+    .legal {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &__notices {
+            display: flex;
+            gap: 1rem;
+        }
+    }
+
+    .icons {
+        display: flex;
+        gap: 1rem;
+
+        &__logo {
+            height: 40px;
+            color: white;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $main-color;
+            }
+        }
     }
 }
