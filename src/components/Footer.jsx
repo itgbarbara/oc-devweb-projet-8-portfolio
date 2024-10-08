@@ -18,15 +18,30 @@ const Footer = () => {
           <Link to="">
             <p>Plan du site</p>
           </Link>
+          <a
+            href="https://github.com/itgbarbara/oc-devweb-projet-8-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Code du site
+          </a>
         </div>
       </div>
       <div className="icons">
-        <Link to="https://github.com/itgbarbara" target="_blank">
+        <a
+          href="https://github.com/itgbarbara"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faSquareGithub} className="icons__logo" />
-        </Link>
-        <Link to="https://www.linkedin.com/in/itgbarbara/" target="_blank">
+        </a>
+        <a
+          href="https://www.linkedin.com/in/itgbarbara/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FontAwesomeIcon icon={faLinkedin} className="icons__logo" />
-        </Link>
+        </a>
       </div>
     </footer>
   )
