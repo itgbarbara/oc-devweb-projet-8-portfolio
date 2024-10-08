@@ -2,8 +2,8 @@ import React from 'react'
 import Layout from '../components/Layout'
 import About from '../components/About'
 import Skills from '../components/Skills'
-import Training from '../components/Training'
 import Portfolio from '../components/Porfolio'
+import Training from '../components/Training'
 import Contact from '../components/Contact'
 
 const Home = () => {
@@ -11,8 +11,8 @@ const Home = () => {
     <Layout>
       <About />
       <Skills />
-      <Training />
       <Portfolio />
+      <Training />
       <Contact />
     </Layout>
   )
