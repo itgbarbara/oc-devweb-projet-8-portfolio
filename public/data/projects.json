@@ -8,7 +8,8 @@
             "/images/about-kasa.jpg",
             "/images/location-kasa.jpg"
         ],
-        "description":"Interface utilisateur d'une application web de location immobilière, réalisée avec React, dans le cadre de la formation OpenClassrooms 'Développeur web junior'",
+        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière, réalisée avec React, dans le cadre de la formation OpenClassrooms 'Développeur web junior'",
+        "category":"Front-end",
         "tags": [
             "Front-end",
             "Intégration",
@@ -22,7 +23,8 @@
             "Organisation du code CSS avec le préprocesseur Sass",
             "Design responsive"
         ],
-        "code":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
+        "url":"",
+        "repo":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
     },
     {
         "id": "2",
@@ -34,6 +36,7 @@
             ""
         ],
         "description":"Ceci est la description de mon deuxième projet !",
+        "category":"Front-end",
         "tags": [
             "Back-end",
             "Node.js",
@@ -47,7 +50,8 @@
             "",
             ""
         ],
-        "code":""
+        "url":"",
+        "repo":""
     },
     {
         "id": "3",
@@ -59,6 +63,7 @@
             ""
         ],
         "description":"Ceci est la description de mon troisième projet !",
+        "category":"Front-end",
         "tags": [
             "Back-end",
             "Node.js",
@@ -72,7 +77,8 @@
             "",
             ""
         ],
-        "code":""
+        "url":"",
+        "repo":""
     },
     {
         "id": "4",
@@ -84,6 +90,7 @@
             ""
         ],
         "description":"Ceci est la description de mon quatrième projet !",
+        "category":"Front-end",
         "tags": [
             "Back-end",
             "Node.js",
@@ -97,6 +104,7 @@
             "",
             ""
         ],
-        "code":""
+        "url":"",
+        "repo":""
     }
 ]
