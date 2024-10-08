@@ -5,11 +5,7 @@
 @import './footer.scss';
 @import './section.scss';
 @import './projectCards.scss';
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../assets/fonts/Roboto-Regular.ttf);
-}
+@import './project.scss';
 
 * {
     padding: 0;
@@ -21,14 +17,14 @@
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: white;
-    font-family: 'Roboto'
+    background-color: $background-color;
+    font-family: $main-font;
 }
 
 a {
     text-decoration: none;
     color: inherit;
-    transition: color 0.2s;
+    transition: all 0.2s ease-in-out;
 
     &:hover {
         color: $main-color;

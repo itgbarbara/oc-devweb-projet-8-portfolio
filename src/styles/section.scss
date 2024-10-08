@@ -8,18 +8,37 @@
     }
 }
 
-#portfolio {
-    background-color: green;
+// #portfolio {
+//     background-color: green;
+// }
+
+
+.about {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &__avatar {
+        width: 340px;
+    }
 }
 
 #contact {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    button {
-        &:hover {
-            color: $main-color;
+    .contactForm {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+
+        &__id {
+            width: 100%;
+            display: flex;
         }
     }
 }

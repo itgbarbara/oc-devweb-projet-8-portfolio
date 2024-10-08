@@ -29,6 +29,7 @@ const ProjectCards = () => {
           key={project.id}
         >
           <article className="card">
+            <div className="card__overlay"></div>
             <img
               className="card__img"
               src={project.cover}

@@ -1,8 +1,20 @@
+// Polices :
+@font-face {
+    font-family: 'Roboto';
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
 // Variables :
 $main-color: #7E5E3A;
 $background-color: #F6F6F6;
+$main-font: 'Roboto';
 
 // Mixins :
+
+@mixin hover-card {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
 
     // Media queries
 
