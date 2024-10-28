@@ -2,6 +2,9 @@
 
 .projectpage {
     @include main-layout;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
 
     .nav {
         display: flex;
@@ -54,11 +57,6 @@
             padding: 0.5rem;
             border-radius: 25px;
             margin-bottom: 1rem;
-            transition: all 0.2s ease-in-out;
-    
-            &:hover {
-                @include hover-card
-            }
         }
     }
 }
