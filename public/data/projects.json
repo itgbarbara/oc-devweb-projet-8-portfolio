@@ -1,47 +1,58 @@
 [
     {
         "id": "1",
-        "title":"Kasa",
-        "cover":"/images/homepage-kasa.jpg",
-        "pictures": [
-            "/images/homepage-kasa.jpg",
-            "/images/about-kasa.jpg",
-            "/images/location-kasa.jpg"
-        ],
-        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière, réalisée avec React, dans le cadre de la formation OpenClassrooms 'Développeur web junior'",
-        "category":"Front-end",
-        "tags": [
-            "Front-end",
-            "Intégration",
-            "Responsive",
-            "React"
-        ],
-        "skills": [
-            "Découpage en composants modulaires et réutilisables",
-            "utilisation des props et des hooks",
-            "Configuration de la navigation entre les pages avec React Router",
-            "Organisation du code CSS avec le préprocesseur Sass",
-            "Design responsive"
-        ],
-        "url":"",
-        "repo":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
-    },
-    {
-        "id": "2",
-        "title":"Projet 2",
+        "title":"Booki",
         "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
         "pictures":[
             "",
             "",
             ""
         ],
-        "description":"Ceci est la description de mon deuxième projet !",
-        "category":"Front-end",
+        "description":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités",
+        "category":[
+            {
+                "id": "1",
+                "name":"HTML/CSS"
+            }
+        ],
         "tags": [
-            "Back-end",
-            "Node.js",
-            "API",
-            "Express"
+            "Front-end",
+            "HTML/CSS",
+            "Intégration maquette",
+            "Media queries"
+        ],
+        "skills": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
+        "url":"https://itgbarbara.github.io/oc-devweb-projet-2-booki/",
+        "repo":"https://github.com/itgbarbara/oc-devweb-projet-2-booki"
+    },
+    {
+        "id": "2",
+        "title":"Sophie Bluel",
+        "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
+        "pictures":[
+            "",
+            "",
+            ""
+        ],
+        "description":"Communication avec une API pour rendre le site web d'une architecte d'intérieur dynamique",
+        "category": [
+            {
+                "id": "2",
+                "name":"JavaScript"
+            }
+        ],
+        "tags": [
+            "JavaScript",
+            "Manipulation du DOM",
+            "Gestion d'évènements",
+            "Fetch API",
+            "LocalStorage"
         ],
         "skills": [
             "",
@@ -55,47 +66,59 @@
     },
     {
         "id": "3",
-        "title":"Projet 3",
-        "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
-        "pictures":[
-            "",
-            "",
-            ""
+        "title":"Kasa",
+        "cover":"/images/homepage-kasa.jpg",
+        "pictures": [
+            "/images/homepage-kasa.jpg",
+            "/images/about-kasa.jpg",
+            "/images/location-kasa.jpg"
         ],
-        "description":"Ceci est la description de mon troisième projet !",
-        "category":"Front-end",
+        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière",
+        "category":[
+            {
+                "id": "3",
+                "name":"React"
+            }
+        ],
         "tags": [
-            "Back-end",
-            "Node.js",
-            "API",
-            "Express"
+            "Front-end",
+            "React",
+            "Intégration maquette",
+            "Media Queries",
+            "Sass"
         ],
         "skills": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Découpage en composants modulaires et réutilisables",
+            "Utilisation des props et des hooks",
+            "Configuration de la navigation entre les pages avec React Router",
+            "Organisation du code CSS avec le préprocesseur Sass",
+            "Design responsive"
         ],
         "url":"",
-        "repo":""
+        "repo":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
     },
     {
         "id": "4",
-        "title":"Projet 4",
+        "title":"Mon Vieux Grimoire",
         "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
         "pictures":[
             "",
             "",
             ""
         ],
-        "description":"Ceci est la description de mon quatrième projet !",
-        "category":"Front-end",
+        "description":"Mise en place du back-end d'un site de notation de livre",
+        "category": [
+            {
+                "id": "4",
+                "name":"Node.js/Express"
+            }
+        ],
         "tags": [
             "Back-end",
+            "API Rest",
             "Node.js",
-            "API",
-            "Express"
+            "Express",
+            "MongoDB"
         ],
         "skills": [
             "",
