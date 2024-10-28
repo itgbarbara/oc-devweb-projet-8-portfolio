@@ -80,12 +80,12 @@ const Project = () => {
         </div>
         <div className="project">
           <h1 className="project__title">{projects[index].title}</h1>
+          <p className="project__description">{projects[index].description}</p>
           <img
             className="project__cover"
             src={projects[index].cover}
             alt={projects[index].title}
           />
-          <p className="project__description">{projects[index].description}</p>
           <ul className="project__tags">
             {projects[index].tags.map((tag) => (
               <li key={`${tag}-${projects[index].id}`}>{tag}</li>
