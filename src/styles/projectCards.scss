@@ -1,7 +1,6 @@
 @import './config.scss';
 
 .cards-grid {
-    // background-color: purple;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); // A CHANGER
@@ -25,18 +24,31 @@
 
     .card-link {
         max-width: 100%;
-        // background-color: yellow;
 
         .card {
-            // background-color: red;
-            height: 100%;
-            border-radius: 10px;
-            // overflow: hidden;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            aspect-ratio: 2 / 1.6;
+            border-radius: 5px;
+            overflow: hidden;
             position: relative;
             transition: all 0.2s ease-in-out;
 
             &:hover {
                 @include hover-card;
+            }
+
+            &:hover .card__overlay {
+                opacity: 1;
+            }
+    
+            &:hover .card__title {
+                transform: translateY(-300%);
+                // top: 0;
+                color: white;
             }
 
             &:active {
@@ -45,32 +57,56 @@
     
             &__img {
                 width: 100%;
-                // height: 100%;
+                height: auto;
                 object-fit: contain;
                 border-radius: inherit;
-                // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            }
-        
-            &__overlay {
-                @include overlay;
-                border-radius: inherit;
-                background: rgba(0,0,0,0.5);
-                display: none;
             }
         
             &__title {
                 color: black; // A CHANGER
-                font-size: 1.13rem;
+                font-size: 1.5rem;
                 font-weight: 700;
-                // position: absolute;
-                // left: 15px;
-                // bottom: 15px;
-                // right: 90px;
+                padding: 20px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                transition: all .2s ease-in-out;
+                z-index: 100;
     
                 @include for-tablets {
                     font-size: 0.9rem;
                 }
-        
+            }
+
+            &__overlay {
+                @include overlay;
+                border-radius: inherit;
+                background: rgba(0,0,0,0.7);
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                opacity: 0;
+                padding: 20px;
+                transition: opacity .2s ease-in-out;
+            }
+
+            &__description {
+                color: white;
+                margin-bottom: 1rem;
+            }
+
+            &__tags {
+                color: white;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.8rem;
+
+                li {
+                    font-size: 0.9rem;
+                    background-color: grey;
+                    padding: 0.2rem 0.5rem;
+                    border-radius: 5px;
+                }
             }
         }
     }
