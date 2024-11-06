@@ -54,4 +54,10 @@
         border-radius: 5px;
         padding: 7px 0;
     }
+
+    &__submit-btn:disabled {
+        // background-color: #A7A7A7;
+        // border: solid 1px #A7A7A7;
+        cursor: default;
+    }
 }
