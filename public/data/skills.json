@@ -1,0 +1,81 @@
+[
+    {
+        "id": "1",
+        "category":"Front-end",
+        "logo":"",
+        "skills": [
+            {
+                "subcategory":"Langages",
+                "tech": [
+                    "HTML",
+                    "CSS",
+                    "JavaScript"
+                ]
+            },
+            {
+                "subcategory":"Frameworks",
+                "tech":[
+                    "React"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "category":"Back-end",
+        "logo":"",
+        "skills": [
+            {
+                "subcategory":"Langages",
+                "tech":[
+                    "Node.js"
+                ]
+            },
+            {
+                "subcategory":"Frameworks",
+                "tech":[
+                    "Express.js"
+                ]
+            },
+            {
+                "subcategory":"Bases de données",
+                "tech":[
+                    "MongoDB"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "category":"Outils",
+        "logo":"",
+        "skills": [
+            {
+                "subcategory":"IDE",
+                "tech":[
+                    "VSCode"
+                ]
+            },
+            {
+                "subcategory":"Versionnage",
+                "tech":[
+                    "Git",
+                    "GitHub"
+                ]
+            },
+            {
+                "subcategory":"Pré-processeur",
+                "tech":[
+                    "Sass"
+                ]
+            },
+            {
+                "subcategory":"Divers",
+                "tech":[
+                    "Lighthouse",
+                    "ChatGPT"
+                ]
+            }
+        ]
+    }
+]
