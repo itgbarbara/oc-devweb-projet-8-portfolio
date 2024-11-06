@@ -2,27 +2,19 @@ import React from 'react'
 import ProjectCards from './ProjectCards'
 import FilterBar from './FilterBar'
 import { useState, useEffect } from 'react'
+import { useContext } from 'react'
+import { DataContext } from '../../utils/context/DataProvider'
 
 const PortfolioSection = () => {
   // Déclaration d'une variable d'état
-  const [projects, setProjects] = useState([])
   const [categories, setCategories] = useState([])
-  const [filteredProjects, setFilteredProjects] = useState([])
+
+  // Récupération des données grâce au contexte
+  const { projects, filteredProjects, setFilteredProjects } =
+    useContext(DataContext)
 
   // Simulation appels API
   useEffect(() => {
-    fetch('/data/projects.json').then((response) =>
-      response
-        .json()
-        .then((projects) => {
-          setProjects(projects)
-          setFilteredProjects(projects)
-        })
-        .catch((err) => {
-          console.log('Error: ', err)
-        })
-    )
-
     // Récupérer les catégories dynamiquement depuis la base "Projects" en supprimant les doublons
     fetch('/data/categories.json').then((response) =>
       response

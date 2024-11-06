@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState, useEffect } from 'react'
 import { useParams, Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
@@ -8,32 +7,15 @@ import {
   faChevronLeft,
   faChevronRight,
 } from '@fortawesome/free-solid-svg-icons'
+import { useContext } from 'react'
+import { DataContext } from '../utils/context/DataProvider'
 
 const Project = () => {
-  // Déclaration des variables d'état
-  const [projects, setProjects] = useState([]) // Tableau qui contiendra les projets
-  const [loading, setLoading] = useState(true) // Etat pour suivre le chargement
-
   // Récupération de l'id qui se trouve dans l'url
   const { id } = useParams()
 
-  // const [index, setIndex] = useState('')
-
-  // Simulation appel API => STOCKER DANS LE LOCAL STORAGE
-  useEffect(() => {
-    fetch('/data/projects.json').then((response) =>
-      response
-        .json()
-        .then((projects) => {
-          setProjects(projects)
-          setLoading(false)
-        })
-        .catch((err) => {
-          console.log('Error: ', err)
-          setLoading(false)
-        })
-    )
-  }, [id])
+  // Récupération des données grâce au contexte
+  const { projects, loading } = useContext(DataContext)
 
   const nbProjects = projects.length
 
