@@ -3,8 +3,9 @@ import Layout from '../components/Layout'
 import About from '../components/About'
 import SkillsSection from '../components/Skills/SkillsSection'
 import PortfolioSection from '../components/Portfolio/PortfolioSection'
-// import TrainingSection from '../components/TrainingSection'
+import TrainingSection from '../components/TrainingSection'
 import ContactSection from '../components/Contact/ContactSection'
+import BackToTopBtn from '../components/BackToTopBtn'
 
 const Home = () => {
   return (
@@ -12,8 +13,9 @@ const Home = () => {
       <About />
       <SkillsSection />
       <PortfolioSection />
-      {/* <TrainingSection /> */}
+      <TrainingSection />
       <ContactSection />
+      <BackToTopBtn />
     </Layout>
   )
 }
