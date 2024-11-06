@@ -1,7 +1,7 @@
 import React from 'react'
 // import { useState } from 'react'
 
-const CategoryBtn = ({ categoryId, handleFilterChange, children }) => {
+const FilterBtn = ({ categoryId, handleFilterChange, children }) => {
   return (
     <button
       onClick={handleFilterChange}
@@ -13,4 +13,4 @@ const CategoryBtn = ({ categoryId, handleFilterChange, children }) => {
   )
 }
 
-export default CategoryBtn
+export default FilterBtn

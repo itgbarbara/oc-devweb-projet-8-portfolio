@@ -1,9 +1,9 @@
 import React from 'react'
 import ProjectCards from './ProjectCards'
-import Filters from './Filters'
+import FilterBar from './FilterBar'
 import { useState, useEffect } from 'react'
 
-const Porfolio = () => {
+const PortfolioSection = () => {
   // Déclaration d'une variable d'état
   const [projects, setProjects] = useState([])
   const [categories, setCategories] = useState([])
@@ -23,6 +23,7 @@ const Porfolio = () => {
         })
     )
 
+    // Récupérer les catégories dynamiquement depuis la base "Projects" en supprimant les doublons
     fetch('/data/categories.json').then((response) =>
       response
         .json()
@@ -50,8 +51,8 @@ const Porfolio = () => {
 
   return (
     <section id="portfolio" className="homepage-section">
-      <h2 className="homepage-section__title">Portfolio</h2>
-      <Filters
+      <h2 className="homepage-section__title">Réalisations</h2>
+      <FilterBar
         categories={categories}
         handleFilterChange={handleFilterChange}
         handleFilterReset={handleFilterReset}
@@ -61,4 +62,4 @@ const Porfolio = () => {
   )
 }
 
-export default Porfolio
+export default PortfolioSection

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Training = () => {
+const TrainingSection = () => {
   return (
     <section id="training" className="homepage-section">
       <h2 className="homepage-section__title">Parcours</h2>
@@ -8,4 +8,4 @@ const Training = () => {
   )
 }
 
-export default Training
+export default TrainingSection

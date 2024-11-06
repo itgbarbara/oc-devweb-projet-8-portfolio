@@ -1,29 +1,29 @@
 import React from 'react'
-import CategoryBtn from './CategoryBtn'
+import FilterBtn from './FilterBtn'
 
-const Filters = ({ categories, handleFilterChange, handleFilterReset }) => {
+const FilterBar = ({ categories, handleFilterChange, handleFilterReset }) => {
   return (
     <ul className="filter-bar">
       <li className="filter-bar__option">
-        <CategoryBtn handleFilterChange={handleFilterReset}>
+        <FilterBtn handleFilterChange={handleFilterReset}>
           Tous les projets
-        </CategoryBtn>
+        </FilterBtn>
       </li>
       {categories.map((category) => (
         <li
           key={`${category.id}-${category.name}`}
           className="filter-bar__option"
         >
-          <CategoryBtn
+          <FilterBtn
             categoryId={category.id}
             handleFilterChange={handleFilterChange}
           >
             {category.name}
-          </CategoryBtn>
+          </FilterBtn>
         </li>
       ))}
     </ul>
   )
 }
 
-export default Filters
+export default FilterBar
