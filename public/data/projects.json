@@ -2,13 +2,13 @@
     {
         "id": "1",
         "title":"Booki",
-        "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
+        "cover":"/images/booki-homepage.jpg",
         "pictures":[
             "",
             "",
             ""
         ],
-        "description":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités",
+        "description":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités en HTML/CSS",
         "category":[
             {
                 "id": "1",
@@ -22,11 +22,9 @@
             "Media queries"
         ],
         "skills": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Découpage d'une maquette Figma",
+            "Utilisation des balises HTML sémantiques appropriées",
+            "Intégration d'une interface responsive en HTML / CSS à l'aide des Media Queries"
         ],
         "url":"https://itgbarbara.github.io/oc-devweb-projet-2-booki/",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-2-booki"
@@ -40,7 +38,7 @@
             "",
             ""
         ],
-        "description":"Communication avec une API pour rendre le site web d'une architecte d'intérieur dynamique",
+        "description":"Communication avec une API pour rendre le site web d'une architecte d'intérieur dynamique et intéractif",
         "category": [
             {
                 "id": "2",
@@ -55,14 +53,14 @@
             "LocalStorage"
         ],
         "skills": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Manipulation des éléments du DOM",
+            "Gestion des évènements utilisateurs",
+            "Récupération de la saisie des formulaires",
+            "Communication avec une API",
+            "Gestion du LocalStorage"
         ],
         "url":"",
-        "repo":""
+        "repo":"https://github.com/itgbarbara/oc-devweb-projet-3-portfolio-architecte-sophie-bluel"
     },
     {
         "id": "3",
@@ -73,7 +71,7 @@
             "/images/about-kasa.jpg",
             "/images/location-kasa.jpg"
         ],
-        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière",
+        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière avec React",
         "category":[
             {
                 "id": "3",
@@ -88,7 +86,7 @@
             "Sass"
         ],
         "skills": [
-            "Découpage en composants modulaires et réutilisables",
+            "Découpage d'une application en composants modulaires et réutilisables",
             "Utilisation des props et des hooks",
             "Configuration de la navigation entre les pages avec React Router",
             "Organisation du code CSS avec le préprocesseur Sass",
@@ -106,7 +104,7 @@
             "",
             ""
         ],
-        "description":"Mise en place du back-end d'un site de notation de livre",
+        "description":"Mise en place du back-end d'un site de notation de livre avec Node.js et Express",
         "category": [
             {
                 "id": "4",
@@ -118,16 +116,17 @@
             "API Rest",
             "Node.js",
             "Express",
-            "MongoDB"
+            "MongoDB",
+            "Sécurité"
         ],
         "skills": [
-            "",
-            "",
-            "",
-            "",
-            ""
+            "Création d'une API RESTful simple avec Node.js et Express",
+            "Mise en place d'un modèle de données avec Mongoose",
+            "Implémentation d'opérations CRUD",
+            "Téléchargement et optimisation des images",
+            "Sécurisation de l'API et des données"
         ],
         "url":"",
-        "repo":""
+        "repo":"https://github.com/itgbarbara/oc-devweb-projet-6-mon-vieux-grimoire"
     }
 ]
