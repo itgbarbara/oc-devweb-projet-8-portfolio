@@ -1,8 +1,13 @@
 import React from 'react'
 // import { NavLink, Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import { useContext } from 'react'
+import { ModalContext } from '../utils/context/ModalProvider'
 
 const Header = () => {
+  // Récupération des données grâce au contexte
+  const { openContactModal } = useContext(ModalContext)
+
   return (
     <header className="header">
       <nav className="header__navbar">
@@ -19,9 +24,9 @@ const Header = () => {
           {/* <HashLink to="/#training" className="navlinks__link">
             <li>Parcours</li>
           </HashLink> */}
-          <HashLink to="/#contact" className="navlinks__link">
+          <button onClick={openContactModal} className="navlinks__link">
             <li>Contact</li>
-          </HashLink>
+          </button>
         </ul>
       </nav>
     </header>

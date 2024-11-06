@@ -1,26 +1,15 @@
 import React from 'react'
-import ContactForm from './ContactForm'
-import Modale from '../Modal'
-import { useState } from 'react'
+import { useContext } from 'react'
+import { ModalContext } from '../../utils/context/ModalProvider'
 
 const ContactSection = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-
-  const openModal = () => setIsModalOpen(true)
-  const closeModal = () => setIsModalOpen(false)
+  // Récupération des données grâce au contexte
+  const { openContactModal } = useContext(ModalContext)
 
   return (
     <section id="contact" className="homepage-section">
-      <span>Vous avez un projet ?</span>
-      <button onClick={openModal}>Ecrivez-moi !</button>
-      <Modale
-        isModalOpen={isModalOpen}
-        closeModal={closeModal}
-        modalTitle={'Contact'}
-      >
-        {' '}
-        <ContactForm />
-      </Modale>
+      <span>Vous souhaitez me confier un projet ?</span>
+      <button onClick={openContactModal}>Ecrivez-moi !</button>
     </section>
   )
 }
