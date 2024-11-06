@@ -7,6 +7,7 @@ const ContactForm = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isValid },
   } = useForm({ mode: 'onTouched' })
 
@@ -26,7 +27,7 @@ const ContactForm = () => {
       )
       .then((response) => {
         console.log(
-          'Email envoyé avec succès !',
+          'Merci pour votre message ! Je vous recontacterai dans les plus brefs délais',
           response.status,
           response.text
         )
@@ -34,6 +35,8 @@ const ContactForm = () => {
       .catch((error) => {
         console.error("Erreur lors de l'envoi de l'email", error)
       })
+
+    reset()
   }
 
   return (
@@ -55,7 +58,7 @@ const ContactForm = () => {
                 message: 'Votre nom est trop long',
               },
             })}
-            placeholder="Votre nom"
+            placeholder="Votre nom *"
           />
           {errors.username && <span>{errors.username.message}</span>}
         </div>
@@ -67,7 +70,7 @@ const ContactForm = () => {
             {...register('useremail', {
               required: true,
             })}
-            placeholder="Votre adresse e-mail"
+            placeholder="Votre adresse e-mail *"
           />
           {errors.useremail && errors.useremail.type === 'required' && (
             <span>Veuillez renseigner votre e-mail</span>
@@ -80,13 +83,10 @@ const ContactForm = () => {
           name="subject"
           id="subject"
           {...register('subject', {
-            required: true,
+            required: false,
           })}
           placeholder="Objet de votre message"
         />
-        {errors.topic && errors.topic.type === 'required' && (
-          <span>Veuillez renseigner l'objet de votre message</span>
-        )}
       </div>
       <textarea
         className="contact-form__message"
@@ -97,8 +97,12 @@ const ContactForm = () => {
           minLength: 5,
         })}
         rows="10"
-        placeholder="Votre message"
+        placeholder="Votre message *"
       ></textarea>
+      {errors.message && (
+        <span>Votre message doit comporter au minimum 5 caractères</span>
+      )}
+      <p>* Champ obligatoire</p>
       <input
         className="contact-form__submit-btn"
         disabled={!isValid}
