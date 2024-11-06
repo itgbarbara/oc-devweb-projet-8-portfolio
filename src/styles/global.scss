@@ -3,10 +3,13 @@
 @import './layout.scss';
 @import './header.scss';
 @import './footer.scss';
+@import './backToTopBtn.scss';
 @import './section.scss';
+@import './filters.scss';
 @import './projectCards.scss';
 @import './project.scss';
-@import './filters.scss';
+@import './modal.scss';
+@import './contactForm.scss';
 
 * {
     padding: 0;
@@ -36,7 +39,7 @@ li {
     list-style: none;
 }
 
-button {
+button, input[type="submit"] {
     background-color: transparent;
     border: none;
     cursor: pointer;
