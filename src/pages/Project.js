@@ -86,9 +86,10 @@ const Project = () => {
             src={projects[index].cover}
             alt={projects[index].title}
           />
-          <ul className="project__tags">
-            {projects[index].tags.map((tag) => (
-              <li key={`${tag}-${projects[index].id}`}>{tag}</li>
+          <h2>Compétences développées</h2>
+          <ul className="project__skills">
+            {projects[index].skills.map((skill) => (
+              <li key={`${skill}-${projects[index].id}`}>{skill}</li>
             ))}
           </ul>
           <div className="links">
