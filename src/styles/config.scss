@@ -4,10 +4,17 @@
     src: url(../assets/fonts/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Lexend Deca';
+    src: url(../assets/fonts/LexendDeca-Regular.ttf);
+}
+
 // Variables :
-$main-color: #7E5E3A;
-$background-color: #F6F6F6;
+$main-color: #5e7f5d; // Vert forêt léger
+$neutral-color: #f0ebe3; // Blanc sable
+$accent-color:#a56c4f; // Terre cuite foncée
 $main-font: 'Roboto';
+$title-font: 'Lexend Deca';
 
 // Mixins :
 
