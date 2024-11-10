@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from '../pages/Home'
-import Project from '../pages/Project'
+import HomePage from '../pages/HomePage'
+import ProjectPage from '../pages/ProjectPage'
 import ErrorPage from '../pages/ErrorPage'
 import DataProvider from '../utils/context/DataProvider'
 import ModalProvider from '../utils/context/ModalProvider'
@@ -15,8 +15,8 @@ const Router = () => {
           <ModalProvider>
             <ContactModal />
             <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/project/:id" element={<Project />} />
+              <Route path="/" element={<HomePage />} />
+              <Route path="/project/:id" element={<ProjectPage />} />
               <Route path="/error" element={<ErrorPage />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>

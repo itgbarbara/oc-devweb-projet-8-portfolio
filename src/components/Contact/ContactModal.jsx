@@ -10,7 +10,7 @@ const ContactModal = () => {
 
   return (
     <Modale
-      isModalOpen={isContactModalOpen}
+      isOpen={isContactModalOpen}
       closeModal={closeContactModal}
       modalTitle={'Contact'}
     >

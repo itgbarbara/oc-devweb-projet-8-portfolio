@@ -19,9 +19,11 @@ const SkillsSection = () => {
   }, [])
 
   return (
-    <section id="skills" className="homepage-section">
-      <h2 className="homepage-section__title">Compétences</h2>
-      <SkillCards skills={skills} />
+    <section id="skills" className="homepage-section skills">
+      <div className="layout">
+        <h2 className="homepage-section__title">Compétences</h2>
+        <SkillCards data={skills} layout="skillcards-layout" />
+      </div>
     </section>
   )
 }

@@ -1,0 +1,54 @@
+@import './config.scss';
+
+.skillcards-layout {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.skillcard {
+    width: 30%;
+    min-width: 100px;
+    background-color: lighten($main-color, 50%);
+    border-radius: 36% 64% 47% 53% / 57% 45% 55% 43%;
+    padding: 20px 10px 50px 10px;
+
+    &__title {
+        font-family: 'Lexend Deca';
+        color: $main-color;
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+}
+
+.tech-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: baseline;
+
+    .tech {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        filter: grayscale(0%);
+        transition: filter 0.3s ease;
+
+        &__logo {
+            height: 40px;
+            filter: grayscale(0%)
+        }
+    }
+
+    &:hover .tech {
+        filter: grayscale(100%);
+    }
+
+    &:hover .tech:hover {
+        filter: grayscale(0%)
+    }
+}

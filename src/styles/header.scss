@@ -1,14 +1,17 @@
 @import './config.scss';
 
 .header {
-    @include main-layout;
+    background-color: white;
     width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: space-between;
-    // align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 2000;
+
+    .layout {
+        @include main-layout;
+    }
 
     @include for-smartphones {
         padding-top: 1.25rem;
@@ -16,8 +19,8 @@
     }
 
     &__navbar {
+        color: darken($main-color, 20%);
         font-size: 1.5rem;
-        font-weight: 500;
 
         @include for-tablets {
             font-size: 1.25rem;

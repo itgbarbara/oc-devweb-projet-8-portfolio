@@ -1,9 +1,9 @@
 @import './config.scss';
 
-.cards-grid {
+.cards-layout {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); // A CHANGER
+    grid-template-columns: repeat(2, minmax(350px, 1fr)); // A CHANGER
     justify-items: center;
     border-radius: 25px;
     padding: 25px;
@@ -31,12 +31,12 @@
             flex-direction: column;
             justify-content: space-between;
             width: 100%;
-            max-width: 350px;
+            max-width: 600px;
             aspect-ratio: 2 / 1.6;
             border-radius: 5px;
             overflow: hidden;
             position: relative;
-            transition: all 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out, active 0.1s ease-in-out;
 
             &:hover {
                 @include hover-card;
@@ -48,8 +48,8 @@
     
             &:hover .card__title {
                 transform: translateY(-300%);
-                // top: 0;
-                color: white;
+                font-size: 2.2rem;
+                color: $neutral-color;
             }
 
             &:active {
@@ -82,7 +82,7 @@
             &__overlay {
                 @include overlay;
                 border-radius: inherit;
-                background: rgba(0,0,0,0.7);
+                background: rgba(darken($main-color,20%), 0.8);
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
@@ -92,19 +92,19 @@
             }
 
             &__description {
-                color: white;
+                color: $neutral-color;
                 margin-bottom: 1rem;
             }
 
             &__tags {
-                color: white;
+                color: $main-color;
                 display: flex;
                 flex-wrap: wrap;
                 gap: 0.8rem;
 
                 li {
                     font-size: 0.9rem;
-                    background-color: grey;
+                    background-color: $neutral-color;
                     padding: 0.2rem 0.5rem;
                     border-radius: 5px;
                 }

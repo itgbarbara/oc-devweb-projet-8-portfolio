@@ -1,21 +1,15 @@
 import React from 'react'
+import Skill from './Skill'
 
-const SkillCards = ({ skills }) => {
+const SkillCards = ({ data, layout }) => {
   return (
-    <div className="cards-grid">
-      {skills.map((skill) => (
-        <article key={skill.id} className="card">
-          <h3 className="card__title">{skill.category}</h3>
-          {skill.skills.map((skill) => (
-            <div>
-              <h4>{skill.subcategory}</h4>
-              <ul>
-                {skill.tech.map((tech) => (
-                  <li>{tech}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+    <div className={layout}>
+      {data.map((skill) => (
+        <article key={`skill-card-${skill.category}`} className="skillcard">
+          <div className="skillcard__content">
+            <h3 className="skillcard__title">{skill.category}</h3>
+            <Skill skill={skill} />
+          </div>
         </article>
       ))}
     </div>

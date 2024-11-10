@@ -6,8 +6,6 @@
     min-height: 100vh;
 
     &__main {
-        @include main-layout;
-        @include main-margin-bottom;
         @include centered-column;
         width: 100%;
         flex-grow: 1;

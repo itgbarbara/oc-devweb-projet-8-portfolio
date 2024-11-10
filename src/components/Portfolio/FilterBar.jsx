@@ -1,11 +1,19 @@
 import React from 'react'
 import FilterBtn from './FilterBtn'
 
-const FilterBar = ({ categories, handleFilterChange, handleFilterReset }) => {
+const FilterBar = ({
+  categories,
+  handleFilterChange,
+  handleFilterReset,
+  activeFilterId,
+}) => {
   return (
     <ul className="filter-bar">
       <li className="filter-bar__option">
-        <FilterBtn handleFilterChange={handleFilterReset}>
+        <FilterBtn
+          handleFilterChange={handleFilterReset}
+          isActive={!activeFilterId}
+        >
           Tous les projets
         </FilterBtn>
       </li>
@@ -17,6 +25,7 @@ const FilterBar = ({ categories, handleFilterChange, handleFilterReset }) => {
           <FilterBtn
             categoryId={category.id}
             handleFilterChange={handleFilterChange}
+            isActive={activeFilterId === category.id}
           >
             {category.name}
           </FilterBtn>

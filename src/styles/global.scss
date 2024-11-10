@@ -4,12 +4,16 @@
 @import './header.scss';
 @import './footer.scss';
 @import './backToTopBtn.scss';
-@import './section.scss';
+@import './homePage.scss';
 @import './filters.scss';
 @import './projectCards.scss';
-@import './project.scss';
+@import './projectPage.scss';
 @import './modal.scss';
 @import './contactForm.scss';
+@import './collapse.scss';
+@import './callToActionBtn.scss';
+@import './confirmation.scss';
+@import './skillcard.scss';
 
 * {
     padding: 0;
@@ -18,10 +22,14 @@
     font-size: 1rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
-    background-color: $background-color;
+    background-color: white;
     font-family: $main-font;
 }
 
@@ -31,7 +39,7 @@ a {
     transition: all 0.2s ease-in-out;
 
     &:hover {
-        color: $main-color;
+        color: $accent-color;
     }
 }
 
@@ -39,7 +47,14 @@ li {
     list-style: none;
 }
 
+input, textarea {
+    font-family: inherit;
+    border: none;
+    resize: none;
+}
+
 button, input[type="submit"] {
+    font-family: inherit;
     background-color: transparent;
     border: none;
     cursor: pointer;

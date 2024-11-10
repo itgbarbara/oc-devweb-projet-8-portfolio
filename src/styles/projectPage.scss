@@ -1,0 +1,95 @@
+@import './config.scss';
+
+.projectpage {
+    width: 100%;
+    margin-bottom: 30px;;
+
+    .layout {
+        @include main-layout;
+        background-color: $neutral-color;
+        border-radius: 15px;
+        padding-block: 2rem;
+        max-width: 90%;
+    }
+
+    .topnav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &__link {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 200px;
+            padding: 7px 11px;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: $neutral-color;
+                background-color: lighten($accent-color, 10%);
+            }
+        }
+
+        &__icon {
+            padding: 0 1rem 0 1rem;
+        }
+    }
+
+    .project {    
+
+        .section-1 {
+            width: 100%;
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 30px;
+        }
+
+        &__description {
+            order: 2;
+        }
+
+        &__title {
+            font-family: $title-font;
+            color: $accent-color;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        &__about {
+            margin-bottom: 0.5rem;
+        }
+    
+        &__gallery {
+            // width: 50%;
+
+            img {
+                max-width: 500px;
+                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            }
+        }
+    }
+
+    .bottomlinks {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        &__link {
+            display: flex;
+            gap: 0.3rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 10px;
+            transition: all 0.2s ease-in-out;
+
+            &:hover {
+                color: $neutral-color;
+                background-color: lighten($accent-color, 10%);
+            }
+        }
+    }
+}

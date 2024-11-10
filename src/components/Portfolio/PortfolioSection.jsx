@@ -6,10 +6,11 @@ import { useContext } from 'react'
 import { DataContext } from '../../utils/context/DataProvider'
 
 const PortfolioSection = () => {
-  // Déclaration d'une variable d'état
-  const [categories, setCategories] = useState([])
+  // Déclaration de variables d'état
+  const [categories, setCategories] = useState([]) // Pour stocker les catégories
+  const [activeFilterId, setActiveFilterId] = useState(null) // Pour suivre le filtre actif
 
-  // Récupération des données grâce au contexte
+  // Récupération des données des projets grâce au contexte
   const { projects, filteredProjects, setFilteredProjects } =
     useContext(DataContext)
 
@@ -28,8 +29,14 @@ const PortfolioSection = () => {
     )
   }, [])
 
+  useEffect(() => {
+    setFilteredProjects(projects)
+  }, [])
+
+  // Gestion de la sélection d'une categorie
   const handleFilterChange = (e) => {
     const selectedCategoryId = e.target.dataset.id
+    setActiveFilterId(selectedCategoryId)
 
     const filterProjects = projects.filter((project) =>
       project.category.some((cat) => cat.id === selectedCategoryId)
@@ -37,19 +44,24 @@ const PortfolioSection = () => {
     setFilteredProjects(filterProjects)
   }
 
+  // Gestion de la sélection de toutes les catégories
   const handleFilterReset = () => {
+    setActiveFilterId(null)
     setFilteredProjects(projects)
   }
 
   return (
     <section id="portfolio" className="homepage-section">
-      <h2 className="homepage-section__title">Réalisations</h2>
-      <FilterBar
-        categories={categories}
-        handleFilterChange={handleFilterChange}
-        handleFilterReset={handleFilterReset}
-      />
-      <ProjectCards projects={filteredProjects} />
+      <div className="layout">
+        <h2 className="homepage-section__title">Réalisations</h2>
+        <FilterBar
+          categories={categories}
+          handleFilterChange={handleFilterChange}
+          handleFilterReset={handleFilterReset}
+          activeFilterId={activeFilterId}
+        />
+        <ProjectCards data={filteredProjects} layout="cards-layout" />
+      </div>
     </section>
   )
 }

@@ -1,0 +1,126 @@
+@import './config.scss';
+.homepage-section {
+    width: 100%;
+
+    .layout {
+        @include main-layout;
+        padding-block: 2rem;
+        margin-bottom: 20px;
+    }
+
+    &__title {
+        color: $accent-color;
+        font-family: $title-font;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+}
+
+.about {
+    .layout {
+        min-height: calc(88vh);
+        background-color: $neutral-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        max-width: 90%; // OU ALORS METTRE DES MARGES A DROITE ET A GAUCHE ?
+        border-radius: 15px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__avatar {
+        width: 340px;
+    }
+
+    &__introduction {
+        display: flex;
+        flex-direction: column;
+        gap: 0.8rem;
+
+        em {
+            font-style: normal;
+            color: $main-color;
+            font-weight: 600;
+        }
+    }
+}
+
+#contact {
+    .layout {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#portfolio {
+    .layout {
+        background-color: $neutral-color;
+        max-width: 90%;
+        border-radius: 15px;
+    }
+}
+
+#training {
+    .layout {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .training-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .training-card {
+        // background-color: lighten($main-color, 50%);
+        border: 3px lighten($main-color, 30%) solid;
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+
+        &__title {
+            font-size: 1.3rem;
+            color: $main-color;
+        }
+
+        
+        &__en-tete {
+            display: flex;
+            gap: 0.5rem;
+
+            &--period, &--category {
+                color: grey;
+            }
+        }
+
+        &__organization {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+
+            &--logo {
+                height: 20px;
+            }
+
+            &--url {
+                display: flex;
+                gap: 0.3rem;
+            }
+        }
+
+        &__description {
+            color: grey;
+        }
+    }
+}

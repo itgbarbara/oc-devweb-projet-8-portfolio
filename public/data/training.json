@@ -1,0 +1,41 @@
+[
+    {
+        "id":"1",
+        "category":"Formation",
+        "period":"2024",
+        "position":"Formation diplômante 'Développeur web'",
+        "organization": {
+            "name":"OpenClassrooms",
+            "logo":"/images/logo_openclassrooms.png",
+            "url":"https://openclassrooms.com/fr/paths/899-developpeur-web"
+        },
+        "description":[
+            "Formation diplômante à distance en vue de l'obtention d'un titre RNCP de niveau 5 (bac+2).",
+            "Réalisation de projets professionnalisants, tirés de cas concrets d'entreprise.",
+            "Technologies : HTML, CSS, JavaScript, React, Git/GitHub, NodeJS, Express, MongoDB, API RESTful..."
+        ]
+    },
+    {
+        "id":"2",
+        "category":"Expérience professionnelle",
+        "period":"2016-2023",
+        "position":"Contrôleuse de gestion",
+        "description":[
+            "Postes de contrôleuse de gestion occupés au seins de divers grands groupes : Stanhome France, Groupe Yves Rocher, Groupement d'Achat des centres E.Leclerc (GALEC), Armand Thiery, Laboratoire Nuxe."
+        ]
+    },
+    {
+        "id":"3",
+        "category":"Formation",
+        "period":"2016",
+        "position":"Obtention d'un Grade de Master (bac+5) en Finance d'Entreprise",
+        "organization": {
+            "name":"ESDES Business School",
+            "logo":"/images/logo_esdes.jpg",
+            "url":"https://www.esdes.fr/"
+        },
+        "description":[
+            ""
+        ]
+    }
+]

@@ -1,18 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const ProjectCards = ({ projects }) => {
+const ProjectCards = ({ data, layout }) => {
   return (
-    <div className="cards-grid">
-      {projects.map((project) => (
+    <div className={layout}>
+      {data.map((project) => (
         <Link
           className="card-link"
           to={`/project/${project.id}`}
-          key={project.id}
+          key={`project-card-${project.id}`}
         >
           <article className="card">
             <div className="card__overlay">
-              <p className="card__description">{project.description}</p>
+              <p className="card__description">{project.about}</p>
               <ul className="card__tags">
                 {project.tags.map((tag) => (
                   <li key={`${tag}-${project.id}`}>{tag}</li>
@@ -21,7 +21,7 @@ const ProjectCards = ({ projects }) => {
             </div>
             <img
               className="card__img"
-              src={project.cover}
+              src={project.pictures[0]}
               alt={project.title}
             />
             <h2 className="card__title">{project.title}</h2>
