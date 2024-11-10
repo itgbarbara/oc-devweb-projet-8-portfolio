@@ -1,9 +1,27 @@
 .back-to-top {
-    background-color: white;
-    height: 15px;
-    border-radius: 5px;
+    color: $neutral-color;
+    background-color: $main-color;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     position: fixed;
     bottom: 30px;
     right: 30px;
-    padding: 13px 15px;
+    opacity: 0; // Bouton invisible par défaut
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: $neutral-color;
+        background-color: $accent-color;
+    }
+
+    &:active {
+        transform: scale(0.9);
+    }
+
+    &--visible {
+        opacity: 1;
+        visibility: visible;
+    }
 }
