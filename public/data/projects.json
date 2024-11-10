@@ -2,17 +2,15 @@
     {
         "id": "1",
         "title":"Booki",
-        "cover":"/images/booki-homepage.jpg",
-        "pictures":[
-            "",
-            "",
-            ""
+        "pictures": [
+            "/images/booki-homepage.jpg"
         ],
-        "description":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités en HTML/CSS",
+        "about":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités en HTML/CSS, conformément à une maquette.",
+        "description":"Premier projet de la formation OpenClassrooms 'Développeur Web Junior'.",
         "category":[
             {
                 "id": "1",
-                "name":"HTML/CSS"
+                "name":"Intégration HTML/CSS"
             }
         ],
         "tags": [
@@ -21,10 +19,21 @@
             "Intégration maquette",
             "Media queries"
         ],
+        "technos":[
+            "HTML",
+            "CSS"
+        ],
+        "objectives":[
+            "Intégrer l'interface visuelle statique de la page d'accueil du site Booki, en HTML et CSS (barre de recherche et filtres non fonctionnels).",
+            "Assurer une expérience utilisateur optimale sur divers appareils en mettant en place une version desktop (first), tablette et mobile avec 2 breakpoints (1024px et 768px).",
+            "Respecter une charte graphique et une maquette Figma."
+        ],
         "skills": [
-            "Découpage d'une maquette Figma",
+            "Découpage d'une maquette",
             "Utilisation des balises HTML sémantiques appropriées",
-            "Intégration d'une interface responsive en HTML / CSS à l'aide des Media Queries"
+            "Disposition des éléments en CSS avec flexbox",
+            "Intégration d'une interface responsive à l'aide des Media Queries",
+            "Versionnage d'un projet avec Git et GitHub"
         ],
         "url":"https://itgbarbara.github.io/oc-devweb-projet-2-booki/",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-2-booki"
@@ -32,13 +41,11 @@
     {
         "id": "2",
         "title":"Sophie Bluel",
-        "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
         "pictures":[
-            "",
-            "",
-            ""
+            "https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg"
         ],
-        "description":"Communication avec une API pour rendre le site web d'une architecte d'intérieur dynamique et intéractif",
+        "about":"Communication avec une API pour rendre le portfolio d'une architecte d'intérieur dynamique et intéractif, grâce à JavaScript.",
+        "description":"Second projet de la formation OpenClassrooms 'Développeur Web Junior'.",
         "category": [
             {
                 "id": "2",
@@ -52,11 +59,24 @@
             "Fetch API",
             "LocalStorage"
         ],
+        "technos":[
+            "HTML",
+            "CSS",
+            "JavaScript"
+        ],
+        "objectives":[
+            "Rendre une page web dynamique et intéractive avec JavaScript, sans utiliser de framework, à partir de la version statique du site d'origine (code HTML / CSS existant).",
+            "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte.",
+            "Permettre à l'utilisateur d'afficher et de filtrer les travaux sur la page d'accueil.",
+            "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie à l'aide d'une boîte de dialogue modale (à créer).",
+            "Mémoriser les données récupérées dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté.",
+            "Tester les nouvelles fonctionnalités grâce à la mise à disposition d'une API http et de sa documentation."
+        ],
         "skills": [
             "Manipulation des éléments du DOM",
             "Gestion des évènements utilisateurs",
             "Récupération de la saisie des formulaires",
-            "Communication avec une API",
+            "Communication avec une API et opérations asynchrones",
             "Gestion du LocalStorage"
         ],
         "url":"",
@@ -65,14 +85,18 @@
     {
         "id": "3",
         "title":"Kasa",
-        "cover":"/images/homepage-kasa.jpg",
         "pictures": [
             "/images/homepage-kasa.jpg",
             "/images/about-kasa.jpg",
             "/images/location-kasa.jpg"
         ],
-        "description":"Intégration de l'interface utilisateur d'une application web de location immobilière avec React",
+        "about":"Intégration de l'interface utilisateur d'une application web de location immobilière avec React, conformément à une maquette.",
+        "description":"Quatrième projet de la formation OpenClassrooms 'Développeur Web Junior'.",
         "category":[
+            {
+                "id": "1",
+                "name":"Intégration HTML/CSS"
+            },
             {
                 "id": "3",
                 "name":"React"
@@ -85,12 +109,23 @@
             "Media Queries",
             "Sass"
         ],
+        "technos":[
+            "JSX",
+            "React",
+            "Sass"
+        ],
+        "objectives":[
+            "Développer une interface utilisateur moderne et réactive en utilisant la librairie React.",
+            "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en immitant le comportement d'un site web multi-page traditionnel.",
+            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour optimiser l'écriture du code.",
+            "Améliorer l'expérience utilisateur en associant des animations à certains éléments intéractifs."
+        ],
         "skills": [
             "Découpage d'une application en composants modulaires et réutilisables",
-            "Utilisation des props et des hooks",
-            "Configuration de la navigation entre les pages avec React Router",
-            "Organisation du code CSS avec le préprocesseur Sass",
-            "Design responsive"
+            "Configuration de la navigation entre les pages de l'application avec React Router",
+            "Utilisation des props et des hooks de base (useState, useEffect, useParams, useContext...)",
+            "Organisation et optimisation du code avec Sass, en appliquant les méthodes DRY et BEM (utilisation de variables et de mixins).",
+            "Intégration d'une interface responsive à l'aide des Media Queries"
         ],
         "url":"",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
@@ -98,13 +133,11 @@
     {
         "id": "4",
         "title":"Mon Vieux Grimoire",
-        "cover":"https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg",
         "pictures":[
-            "",
-            "",
-            ""
+            "https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg"
         ],
-        "description":"Mise en place du back-end d'un site de notation de livre avec Node.js et Express",
+        "about":"Mise en place du back-end d'un site de référencement et de notation de livres avec Node.js et Express.",
+        "description":"Cinquième projet de la formation OpenClassrooms 'Développeur Web Junior'.",
         "category": [
             {
                 "id": "4",
@@ -119,10 +152,18 @@
             "MongoDB",
             "Sécurité"
         ],
+        "technos":[
+            "Node.js",
+            "Express",
+            "MongoDB"
+        ],
+        "objectives":[
+            ""
+        ],
         "skills": [
             "Création d'une API RESTful simple avec Node.js et Express",
             "Mise en place d'un modèle de données avec Mongoose",
-            "Implémentation d'opérations CRUD",
+            "Implémentation d'une logique CRUD",
             "Téléchargement et optimisation des images",
             "Sécurisation de l'API et des données"
         ],
