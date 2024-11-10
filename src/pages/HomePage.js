@@ -5,7 +5,6 @@ import SkillsSection from '../components/Skills/SkillsSection'
 import PortfolioSection from '../components/Portfolio/PortfolioSection'
 import TrainingSection from '../components/TrainingSection'
 import ContactSection from '../components/Contact/ContactSection'
-import BackToTopBtn from '../components/BackToTopBtn'
 
 const Home = () => {
   return (
@@ -15,7 +14,6 @@ const Home = () => {
       <PortfolioSection />
       <TrainingSection />
       <ContactSection />
-      <BackToTopBtn />
     </Layout>
   )
 }
