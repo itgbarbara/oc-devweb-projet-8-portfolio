@@ -1,80 +1,60 @@
 [
     {
-        "id": "1",
-        "category":"Front-end",
-        "logo":"",
-        "skills": [
+        "category":"Frontend",
+        "techs": [
             {
-                "subcategory":"Langages",
-                "tech": [
-                    "HTML",
-                    "CSS",
-                    "JavaScript"
-                ]
+                "name":"HTML",
+                "logo":"/images/html5_icon.svg"
             },
             {
-                "subcategory":"Frameworks",
-                "tech":[
-                    "React"
-                ]
+                "name":"CSS",
+                "logo":"/images/css3_icon.svg"
+            },
+            {
+                "name":"JavaScript",
+                "logo":"/images/js_icon.svg"
+            },
+            {
+                "name":"React",
+                "logo":"/images/react_icon.svg"
             }
         ]
     },
     {
-        "id": "2",
-        "category":"Back-end",
-        "logo":"",
-        "skills": [
+        "category":"Backend",
+        "techs":[
             {
-                "subcategory":"Langages",
-                "tech":[
-                    "Node.js"
-                ]
+                "name":"Node.js",
+                "logo":"/images/nodejs_icon.svg"
             },
             {
-                "subcategory":"Frameworks",
-                "tech":[
-                    "Express.js"
-                ]
+                "name":"Express.js",
+                "logo":"/images/express_icon.svg"
             },
             {
-                "subcategory":"Bases de données",
-                "tech":[
-                    "MongoDB"
-                ]
+                "name":"MongoDB",
+                "logo":"/images/mongodb_icon.svg"
             }
         ]
     },
     {
-        "id": "3",
         "category":"Outils",
-        "logo":"",
-        "skills": [
+        "techs":[
             {
-                "subcategory":"IDE",
-                "tech":[
-                    "VSCode"
-                ]
+                "name":"VSCode",
+                "logo":"/images/vscode_icon.svg"
             },
             {
-                "subcategory":"Versionnage",
-                "tech":[
-                    "Git",
-                    "GitHub"
-                ]
+                "name":"Git",
+                "logo":"/images/git_icon.svg"
             },
             {
-                "subcategory":"Pré-processeur",
-                "tech":[
-                    "Sass"
-                ]
+                "name":"GitHub",
+                "logo":"/images/github_icon.svg"
             },
             {
-                "subcategory":"Divers",
-                "tech":[
-                    "Lighthouse",
-                    "ChatGPT"
-                ]
+                "name":"Sass",
+                "logo":"/images/sass_icon.svg"
             }
         ]
     }
