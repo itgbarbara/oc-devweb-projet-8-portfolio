@@ -12,7 +12,7 @@ const About = () => {
     <section id="about" className="homepage-section about">
       <div className="layout">
         <img className="about__avatar" src={avatar} alt="avatar" />
-        <div className="about__container">
+        <div className="container">
           <h1 className="homepage-section__title">
             Barbara ALVAREZ | Développeuse Web Junior
           </h1>
@@ -23,17 +23,17 @@ const About = () => {
               de processus en concevant des tableaux de bord sur Excel.
             </p>
             <p>
-              Aujourd'hui en <em>reconversion vers le développement web</em>, je
-              suis déterminée à mettre mes compétences au service de
-              l'expérience utilisateur en créant des{' '}
+              Aujourd'hui en reconversion dans le domaine du{' '}
+              <em>développement web</em>, je suis déterminée à mettre mes
+              compétences au service de l'expérience utilisateur en créant des{' '}
               <em>interfaces modernes et intuitives</em> avec React.
             </p>
             <p>
-              Mon objectif : consolider ma formation en <em>alternance</em>,
+              Mon objectif : <em>consolider ma formation en alternance</em>,
               pour devenir développeuse web confirmée.
             </p>
           </div>
-          <div>
+          <div className="about__call-to-action">
             <p>Vous souhaitez que l'on travaille ensemble ? </p>
             <CallToActionBtn
               onClick={openContactModal}
