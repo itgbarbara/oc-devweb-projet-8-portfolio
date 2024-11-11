@@ -25,13 +25,13 @@
         ],
         "objectives":[
             "Intégrer l'interface visuelle statique de la page d'accueil du site Booki, en HTML et CSS (barre de recherche et filtres non fonctionnels).",
-            "Assurer une expérience utilisateur optimale sur divers appareils en mettant en place une version desktop (first), tablette et mobile avec 2 breakpoints (1024px et 768px).",
+            "Assurer une expérience utilisateur optimale sur divers appareils en implémentant une version desktop (first), tablette et mobile avec 2 breakpoints (1024px et 768px).",
             "Respecter une charte graphique et une maquette Figma."
         ],
         "skills": [
             "Découpage d'une maquette",
-            "Utilisation des balises HTML sémantiques appropriées",
-            "Disposition des éléments en CSS avec flexbox",
+            "Structuration d'une page web avec les balises HTML sémantiques appropriées",
+            "Disposition du contenu avec flexbox / grid",
             "Intégration d'une interface responsive à l'aide des Media Queries",
             "Versionnage d'un projet avec Git et GitHub"
         ],
@@ -110,21 +110,20 @@
             "Sass"
         ],
         "technos":[
-            "JSX",
             "React",
             "Sass"
         ],
         "objectives":[
             "Développer une interface utilisateur moderne et réactive en utilisant la librairie React.",
             "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en immitant le comportement d'un site web multi-page traditionnel.",
-            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour optimiser l'écriture du code.",
+            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour produire du code plus lisible facile à maintenir.",
             "Améliorer l'expérience utilisateur en associant des animations à certains éléments intéractifs."
         ],
         "skills": [
             "Découpage d'une application en composants modulaires et réutilisables",
             "Configuration de la navigation entre les pages de l'application avec React Router",
             "Utilisation des props et des hooks de base (useState, useEffect, useParams, useContext...)",
-            "Organisation et optimisation du code avec Sass, en appliquant les méthodes DRY et BEM (utilisation de variables et de mixins).",
+            "Organisation et optimisation du code avec Sass, en appliquant les méthodes DRY (utilisation de variables et de mixins) et BEM.",
             "Intégration d'une interface responsive à l'aide des Media Queries"
         ],
         "url":"",
@@ -158,14 +157,19 @@
             "MongoDB"
         ],
         "objectives":[
-            ""
+            "Structurer une application selon l'architecture Modèle - Vue - Contrôleur (MVC)",
+            "Connecter un serveur Node.js / Express à une base de données MongoDB.",
+            "Implémenter un middleware d'authentification pour permettre aux utilisateurs du site d'accéder aux routes protégées de l'API.",
+            "Permettre aux utilisateurs authentifiés de créer, noter, modifier et supprimer un livre.",
+            "Ajouter une fonctionnalité pour calculer et afficher la note moyenne de chaque livre.",
+            "Gérer le téléchargement et l'optimisation des images de couvertures soumises par les contributeurs du site."
         ],
         "skills": [
-            "Création d'une API RESTful simple avec Node.js et Express",
-            "Mise en place d'un modèle de données avec Mongoose",
-            "Implémentation d'une logique CRUD",
-            "Téléchargement et optimisation des images",
-            "Sécurisation de l'API et des données"
+            "Création d'une API RESTful avec Node.js et Express",
+            "Mise en place d'un modèle logique de données avec Mongoose",
+            "Implémentation d'opérations CRUD",
+            "Gestion du téléchargement et de l'optimisation des images",
+            "Sécurisation de l'API et des données stockées (cryptage des données sensibles, utilisation de jsonwebtokens...) "
         ],
         "url":"",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-6-mon-vieux-grimoire"
