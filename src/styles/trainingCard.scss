@@ -22,7 +22,7 @@
     &__en-tete {
         display: flex;
         gap: 0.5rem;
-        color: grey;
+        color: #757575;
 
         *:not(:last-child)::after {
             content:' • ';

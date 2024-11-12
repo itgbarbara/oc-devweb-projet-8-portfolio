@@ -40,7 +40,7 @@
         padding: 8px 16px;
 
         &:disabled {
-            color: grey;
+            color: #757575;
             background-color: lighten($accent-color, 35%) !important;
         }
     }
