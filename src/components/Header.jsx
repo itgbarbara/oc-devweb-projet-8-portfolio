@@ -15,21 +15,31 @@ const Header = () => {
     <header className="header">
       <nav className="header__navbar">
         <ul className="navlinks">
-          <HashLink to="/#top" className="navlinks__link">
-            <li>Barbara ALVAREZ</li>
-          </HashLink>
-          <HashLink to="/#skills" className="navlinks__link">
-            <li>Compétences</li>
-          </HashLink>
-          <HashLink to="/#portfolio" className="navlinks__link">
-            <li>Réalisations</li>
-          </HashLink>
-          <HashLink to="/#training" className="navlinks__link">
-            <li>Parcours</li>
-          </HashLink>
-          <button onClick={openContactModal} className="navlinks__link">
-            <li>Contact</li>
-          </button>
+          <li>
+            <HashLink to="/#top" className="navlinks__link">
+              Barbara ALVAREZ
+            </HashLink>
+          </li>
+          <li>
+            <HashLink to="/#skills" className="navlinks__link">
+              Compétences
+            </HashLink>
+          </li>
+          <li>
+            <HashLink to="/#portfolio" className="navlinks__link">
+              Réalisations
+            </HashLink>
+          </li>
+          <li>
+            <HashLink to="/#training" className="navlinks__link">
+              Parcours
+            </HashLink>
+          </li>
+          <li>
+            <button onClick={openContactModal} className="navlinks__link">
+              Contact
+            </button>
+          </li>
         </ul>
       </nav>
     </header>
