@@ -95,8 +95,7 @@ $title-font: 'Lexend Deca';
 }
 
 @mixin centered-column {
-    display: flex;
-    flex-direction: column;
+    @include column-display;
     align-items: center;
 }
 
