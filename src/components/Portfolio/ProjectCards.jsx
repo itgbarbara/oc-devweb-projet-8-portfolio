@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom'
 
 //
 
-const ProjectCards = ({ data, layout }) => {
+const ProjectCards = ({ data }) => {
   return (
-    <div className={layout}>
+    <div className="cards-layout">
       {data.map((project) => (
         <Link
           className="card-link"
@@ -26,7 +26,7 @@ const ProjectCards = ({ data, layout }) => {
               src={project.pictures[0]}
               alt={project.title}
             />
-            <h2 className="card__title">{project.title}</h2>
+            <h3 className="card__title">{project.title}</h3>
           </article>
         </Link>
       ))}

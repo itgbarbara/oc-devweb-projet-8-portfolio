@@ -46,10 +46,6 @@
 
         &--open {
             max-height: 500px; /* Etat ouvert */
-
-            // .content {
-            //     padding: 15px;
-            // }
         }
     }
 
@@ -59,11 +55,19 @@
         background-color: white;
         border-radius: 5px;
         gap: 0.5rem;
-        padding: 0.6rem;
+        padding: 0.5rem;
         margin-block: 0.5rem;
 
         li::before {
-            content: "• "
+            content: " • ";
+        }
+
+        li:not(:last-child)::after {
+            content: " ;"
+        }
+
+        li:last-child::after {
+            content: "."
         }
     }
 }

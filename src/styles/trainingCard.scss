@@ -25,7 +25,7 @@
         color: grey;
 
         *:not(:last-child)::after {
-            content:' · ';
+            content:' • ';
         }
     }
 

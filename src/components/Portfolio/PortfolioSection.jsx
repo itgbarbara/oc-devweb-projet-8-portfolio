@@ -64,7 +64,7 @@ const PortfolioSection = () => {
         handleFilterReset={handleFilterReset}
         activeFilterId={activeFilterId}
       />
-      <ProjectCards data={filteredProjects} layout="cards-layout" />
+      <ProjectCards data={filteredProjects} />
     </section>
   )
 }

@@ -24,9 +24,9 @@
             "CSS"
         ],
         "objectives":[
-            "Intégrer l'interface visuelle statique de la page d'accueil du site Booki, en HTML et CSS (barre de recherche et filtres non fonctionnels).",
-            "Assurer une expérience utilisateur optimale sur divers appareils en implémentant une version desktop (first), tablette et mobile avec 2 breakpoints (1024px et 768px).",
-            "Respecter une charte graphique et une maquette Figma."
+            "Intégrer l'interface visuelle statique de la page d'accueil du site Booki, en HTML et CSS (barre de recherche et filtres non fonctionnels)",
+            "Assurer une expérience utilisateur optimale sur divers appareils en implémentant une version desktop (first), tablette et mobile avec 2 breakpoints (1024px et 768px)",
+            "Respecter une charte graphique et une maquette Figma"
         ],
         "skills": [
             "Découpage d'une maquette",
@@ -65,12 +65,12 @@
             "JavaScript"
         ],
         "objectives":[
-            "Rendre une page web dynamique et intéractive avec JavaScript, sans utiliser de framework, à partir de la version statique du site d'origine (code HTML / CSS existant).",
-            "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte.",
-            "Permettre à l'utilisateur d'afficher et de filtrer les travaux sur la page d'accueil.",
-            "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie à l'aide d'une boîte de dialogue modale (à créer).",
-            "Mémoriser les données récupérées dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté.",
-            "Tester les nouvelles fonctionnalités grâce à la mise à disposition d'une API http et de sa documentation."
+            "Rendre une page web dynamique et intéractive avec JavaScript, sans utiliser de framework, à partir de la version statique du site d'origine (code HTML / CSS existant)",
+            "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte",
+            "Permettre à l'utilisateur d'afficher et de filtrer les travaux sur la page d'accueil",
+            "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie à l'aide d'une boîte de dialogue modale (à créer)",
+            "Mémoriser les données récupérées dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté",
+            "Tester les nouvelles fonctionnalités grâce à la mise à disposition d'une API http et de sa documentation"
         ],
         "skills": [
             "Manipulation des éléments du DOM",
@@ -114,10 +114,10 @@
             "Sass"
         ],
         "objectives":[
-            "Développer une interface utilisateur moderne et réactive en utilisant la librairie React.",
-            "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en immitant le comportement d'un site web multi-page traditionnel.",
-            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour produire du code plus lisible facile à maintenir.",
-            "Améliorer l'expérience utilisateur en associant des animations à certains éléments intéractifs."
+            "Développer une interface utilisateur moderne et réactive en utilisant la librairie React",
+            "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en immitant le comportement d'un site web multi-page traditionnel",
+            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour produire du code plus lisible facile à maintenir",
+            "Améliorer l'expérience utilisateur en associant des animations à certains éléments intéractifs"
         ],
         "skills": [
             "Découpage d'une application en composants modulaires et réutilisables",
@@ -158,11 +158,11 @@
         ],
         "objectives":[
             "Structurer une application selon l'architecture Modèle - Vue - Contrôleur (MVC)",
-            "Connecter un serveur Node.js / Express à une base de données MongoDB.",
-            "Implémenter un middleware d'authentification pour permettre aux utilisateurs du site d'accéder aux routes protégées de l'API.",
-            "Permettre aux utilisateurs authentifiés de créer, noter, modifier et supprimer un livre.",
-            "Ajouter une fonctionnalité pour calculer et afficher la note moyenne de chaque livre.",
-            "Gérer le téléchargement et l'optimisation des images de couvertures soumises par les contributeurs du site."
+            "Connecter un serveur Node.js / Express à une base de données MongoDB",
+            "Implémenter un middleware d'authentification pour permettre aux utilisateurs du site d'accéder aux routes protégées de l'API",
+            "Permettre aux utilisateurs authentifiés de créer, noter, modifier et supprimer un livre",
+            "Ajouter une fonctionnalité pour calculer et afficher la note moyenne de chaque livre",
+            "Gérer le téléchargement et l'optimisation des images de couvertures soumises par les contributeurs du site"
         ],
         "skills": [
             "Création d'une API RESTful avec Node.js et Express",
