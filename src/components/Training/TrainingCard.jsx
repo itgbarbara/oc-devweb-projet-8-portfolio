@@ -6,7 +6,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const TrainingCard = ({ data }) => {
   return (
-    <div className="training-layout">
+    <div>
       {data.map((training) => (
         <article key={`training-card-${training.id}`} className="training-card">
           <h3 className="training-card__title">{training.position}</h3>
