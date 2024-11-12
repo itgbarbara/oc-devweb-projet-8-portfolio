@@ -15,14 +15,15 @@ const ContactSection = () => {
 
   return (
     <section id="contact" className="homepage-section contact">
-      <div className="layout">
-        <p>Vous souhaitez me confier un projet ?</p>
-        <CallToActionBtn
-          onClick={openContactModal}
-          label="Ecrivez-moi !"
-          mod="contact"
-        />
-      </div>
+      <h2 className=" homepage-section__title homepage-section__title--contact">
+        Contact
+      </h2>
+      <p>Vous souhaitez me confier un projet ?</p>
+      <CallToActionBtn
+        onClick={openContactModal}
+        label="Ecrivez-moi !"
+        mod="contact"
+      />
     </section>
   )
 }

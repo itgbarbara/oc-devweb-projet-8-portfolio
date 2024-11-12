@@ -18,17 +18,17 @@
         padding: 50px 120px 50px 120px;
     }
 
-    .icons {
+    &__icons {
         display: flex;
         gap: 1rem;
+    }
 
-        &__logo {
-            height: 40px;
-            transition: color 0.2s;
+    &__logo {
+        height: 40px;
+        transition: color 0.2s;
 
-            &:hover {
-                color: $accent-color;
-            }
+        &:hover {
+            color: $accent-color;
         }
     }
 }

@@ -24,20 +24,20 @@ const TrainingSection = () => {
 
   return (
     <section id="training" className="homepage-section training">
-      <div className="layout">
-        <h2 className="homepage-section__title">Parcours</h2>
-        <TrainingCard data={training} layout="training-layout" />
-        <p>
-          Si vous souhaitez en savoir plus sur mon parcours, consultez ma page{' '}
-          <a
-            href="https://www.linkedin.com/in/itgbarbara/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Linkedin
-          </a>
-        </p>
-      </div>
+      <h2 className=" homepage-section__title homepage-section__title--training">
+        Parcours
+      </h2>
+      <TrainingCard data={training} />
+      <p>
+        Si vous souhaitez en savoir plus sur mon parcours, consultez ma page{' '}
+        <a
+          href="https://www.linkedin.com/in/itgbarbara/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Linkedin
+        </a>
+      </p>
     </section>
   )
 }

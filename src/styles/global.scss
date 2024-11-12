@@ -4,16 +4,17 @@
 @import './header.scss';
 @import './footer.scss';
 @import './backToTopBtn.scss';
+@import './modal.scss';
+@import './contactForm.scss';
+@import './confirmation.scss';
 @import './homePage.scss';
 @import './filters.scss';
 @import './projectCards.scss';
 @import './projectPage.scss';
-@import './modal.scss';
-@import './contactForm.scss';
 @import './collapse.scss';
 @import './callToActionBtn.scss';
-@import './confirmation.scss';
 @import './skillcard.scss';
+@import './trainingCard.scss';
 
 * {
     padding: 0;
@@ -58,4 +59,8 @@ button, input[type="submit"] {
     background-color: transparent;
     border: none;
     cursor: pointer;
+
+    &:disabled {
+        cursor: default;
+    }
 }

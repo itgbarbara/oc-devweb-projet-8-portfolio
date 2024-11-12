@@ -1,17 +1,13 @@
 @import './config.scss';
 
 .header {
+    @include main-layout;
     background-color: white;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-block: 2rem;
     position: sticky;
     top: 0;
     z-index: 2000;
-
-    .layout {
-        @include main-layout;
-    }
 
     @include for-smartphones {
         padding-top: 1.25rem;
@@ -31,9 +27,8 @@
         }
 
         .navlinks {
-            display: flex;
+            @include row-display;
             justify-content: space-around;
-            align-items: center;
             flex-wrap: wrap;
             gap: 3.5rem;
 
@@ -43,10 +38,6 @@
 
             @include for-smartphones {
                 gap: 1.6rem;      
-            }
-
-            &__link--active {
-                text-decoration: underline;
             }
         }
     }

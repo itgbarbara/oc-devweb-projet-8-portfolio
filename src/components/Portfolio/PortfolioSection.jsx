@@ -54,17 +54,17 @@ const PortfolioSection = () => {
   }
 
   return (
-    <section id="portfolio" className="homepage-section">
-      <div className="layout">
-        <h2 className="homepage-section__title">Réalisations</h2>
-        <FilterBar
-          categories={categories}
-          handleFilterChange={handleFilterChange}
-          handleFilterReset={handleFilterReset}
-          activeFilterId={activeFilterId}
-        />
-        <ProjectCards data={filteredProjects} layout="cards-layout" />
-      </div>
+    <section id="portfolio" className="homepage-section portfolio">
+      <h2 className="homepage-section__title homepage-section__title--portfolio">
+        Réalisations
+      </h2>
+      <FilterBar
+        categories={categories}
+        handleFilterChange={handleFilterChange}
+        handleFilterReset={handleFilterReset}
+        activeFilterId={activeFilterId}
+      />
+      <ProjectCards data={filteredProjects} layout="cards-layout" />
     </section>
   )
 }

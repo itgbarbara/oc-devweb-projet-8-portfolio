@@ -13,27 +13,25 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="layout">
-        <nav className="header__navbar">
-          <ul className="navlinks">
-            <HashLink to="/#top" className="navlinks__link">
-              <li>Barbara ALVAREZ</li>
-            </HashLink>
-            <HashLink to="/#skills" className="navlinks__link">
-              <li>Compétences</li>
-            </HashLink>
-            <HashLink to="/#portfolio" className="navlinks__link">
-              <li>Réalisations</li>
-            </HashLink>
-            <HashLink to="/#training" className="navlinks__link">
-              <li>Parcours</li>
-            </HashLink>
-            <button onClick={openContactModal} className="navlinks__link">
-              <li>Contact</li>
-            </button>
-          </ul>
-        </nav>
-      </div>
+      <nav className="header__navbar">
+        <ul className="navlinks">
+          <HashLink to="/#top" className="navlinks__link">
+            <li>Barbara ALVAREZ</li>
+          </HashLink>
+          <HashLink to="/#skills" className="navlinks__link">
+            <li>Compétences</li>
+          </HashLink>
+          <HashLink to="/#portfolio" className="navlinks__link">
+            <li>Réalisations</li>
+          </HashLink>
+          <HashLink to="/#training" className="navlinks__link">
+            <li>Parcours</li>
+          </HashLink>
+          <button onClick={openContactModal} className="navlinks__link">
+            <li>Contact</li>
+          </button>
+        </ul>
+      </nav>
     </header>
   )
 }

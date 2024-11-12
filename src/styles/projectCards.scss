@@ -26,10 +26,9 @@
         max-width: 100%;
 
         .card {
-            background-color: white;
-            display: flex;
-            flex-direction: column;
+            @include flex-column;
             justify-content: space-between;
+            background-color: white;
             width: 100%;
             max-width: 600px;
             aspect-ratio: 2 / 1.6;
@@ -82,10 +81,9 @@
             &__overlay {
                 @include overlay;
                 border-radius: inherit;
-                background: rgba(darken($main-color,20%), 0.8);
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 justify-content: flex-end;
+                background: rgba(darken($main-color,20%), 0.8);
                 opacity: 0;
                 padding: 20px;
                 transition: opacity .2s ease-in-out;

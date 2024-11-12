@@ -48,10 +48,6 @@ const ContactForm = () => {
     formState: { errors, isValid },
   } = useForm({ mode: 'onTouched' })
 
-  // register : fonction de react-hook-form qui va permettre d'enregistrer les valeurs que va prendre un champ. S'utilise avec l'attribut "name"
-  // Evite de passer par l'utilisation du State et gère les attributs "value" et "onChange" de chaque élément du formulaire en une fois
-  // handleSubmit : fonction utilisée pour générer une autre fonction (ici, onSubmit)
-
   // Traitement des données du formulaires et envoi de l'email
   const form = useRef()
   const onSubmit = () => {
@@ -86,9 +82,10 @@ const ContactForm = () => {
         ref={form}
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="contact-form__id">
-          <div className="contact-form__field contact-form__field--username">
+        <div className="display-inline">
+          <div className="width-50">
             <input
+              className="contact-form__field contact-form__field--username"
               type="text"
               name="username"
               id="username"
@@ -107,8 +104,9 @@ const ContactForm = () => {
             />
             {errors.username && <span>{errors.username.message}</span>}
           </div>
-          <div className="contact-form__field contact-form__field--email">
+          <div className="width-50">
             <input
+              className="contact-form__field contact-form__field--email"
               type="email"
               name="useremail"
               id="useremail"
@@ -122,17 +120,16 @@ const ContactForm = () => {
             )}
           </div>
         </div>
-        <div className="contact-form__field contact-form__field--subject">
-          <input
-            type="text"
-            name="subject"
-            id="subject"
-            {...register('subject', {
-              required: false,
-            })}
-            placeholder="Objet de votre message"
-          />
-        </div>
+        <input
+          className="contact-form__field contact-form__field--subject"
+          type="text"
+          name="subject"
+          id="subject"
+          {...register('subject', {
+            required: false,
+          })}
+          placeholder="Objet de votre message"
+        />
         <textarea
           className="contact-form__field contact-form__field--message"
           name="message"

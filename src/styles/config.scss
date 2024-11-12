@@ -9,18 +9,31 @@
     src: url(../assets/fonts/LexendDeca-Regular.ttf);
 }
 
-// Variables :
+// Variables
+
+    // Thème
+
 $main-color: #5e7f5d; // Vert forêt léger
 $neutral-color: #f0ebe3; // Blanc sable
 $accent-color:#a56c4f; // Terre cuite foncée
+
+    // Polices
+    
 $main-font: 'Roboto';
 $title-font: 'Lexend Deca';
 
-// Mixins :
+// Mixins
 
 @mixin hover-card {
     transform: scale(1.03);
     box-shadow: 0 0 25px rgba(0,0,0,0.3);
+}
+
+@mixin form-field {
+    color: darken($accent-color,15%);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
     // Media queries
@@ -49,13 +62,6 @@ $title-font: 'Lexend Deca';
     }
 }
 
-    // Police
-
-@mixin font-18px-500 {
-    font-size: 1.13rem;
-    font-weight: 500;
-}
-
     // Mise en page
 
 @mixin main-layout {
@@ -74,41 +80,33 @@ $title-font: 'Lexend Deca';
         padding-left: 5.3%; // 20px
     }
 }
-
-@mixin main-margin-bottom {
-    margin-bottom: 2.5rem;
-
-    @include for-tablets {
-        margin-bottom: 1.5rem;
-    }
-
-    @include for-smartphones {
-        margin-bottom: 0.6rem;
-    }
-}
-
     // Disposition
 
-@mixin column-display {
+@mixin flex-column($vertical-align : flex-start, $horizontal-align : flex-start) {
     display: flex;
     flex-direction: column;
+    justify-content: $vertical-align;
+    align-items: $horizontal-align;
 }
 
 @mixin centered-column {
-    @include column-display;
+    @include flex-column;
+    align-items: center;
+}
+
+@mixin row-display {
+    display: flex;
     align-items: center;
 }
 
 @mixin centered-row {
-    display: flex;
+    @include row-display;
     justify-content: center;
-    align-items: center;
 }
 
 @mixin space-between-row {
-    display: flex;
+    @include row-display;
     justify-content: space-between;
-    align-items: center;
 }
 
 @mixin overlay {

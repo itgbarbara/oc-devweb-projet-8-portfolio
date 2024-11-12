@@ -5,13 +5,12 @@
     // width: 50%;
 
     &__label {
-        position: relative;
-        z-index: 10;
+        @include row-display;
+        gap: 0.8rem;
         color: $main-color;
         font-weight: 700;
-        display: flex;
-        align-items: center;
-        gap: 0.8rem;
+        position: relative;
+        z-index: 10;
         transition: all 0.3s ease-in-out;
 
         .label__name {
@@ -56,10 +55,9 @@
 
     
     .dropdown__content {
+        @include flex-column;
         background-color: white;
         border-radius: 5px;
-        display: flex;
-        flex-direction: column;
         gap: 0.5rem;
         padding: 0.6rem;
         margin-block: 0.5rem;

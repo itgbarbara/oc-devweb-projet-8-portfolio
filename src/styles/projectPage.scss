@@ -1,16 +1,12 @@
 @import './config.scss';
 
 .projectpage {
+    @include main-layout;
     width: 100%;
-    margin-bottom: 30px;;
-
-    .layout {
-        @include main-layout;
-        background-color: $neutral-color;
-        border-radius: 15px;
-        padding-block: 2rem;
-        max-width: 90%;
-    }
+    background-color: $neutral-color;
+    border-radius: 15px;
+    padding-block: 2rem;
+    margin-bottom: 30px;
 
     .topnav {
         display: flex;

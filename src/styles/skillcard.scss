@@ -3,8 +3,8 @@
 .skillcards-layout {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
 }
 
@@ -26,9 +26,9 @@
 
 .tech-container {
     display: flex;
-    gap: 20px;
     justify-content: center;
     align-items: baseline;
+    gap: 20px;
 
     .tech {
         display: flex;

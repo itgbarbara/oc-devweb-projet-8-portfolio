@@ -58,93 +58,89 @@ const Project = () => {
   return (
     <Layout>
       <div className="projectpage">
-        <div className="layout">
-          <div className="projectpage__topnav topnav">
-            <Link
-              className="topnav__link"
-              to={`/project/${
-                projects[index === 0 ? nbProjects - 1 : index - 1].id
-              }`}
-            >
-              <FontAwesomeIcon className="topnav__icon" icon={faChevronLeft} />
-              Projet précédent
-            </Link>
-            <h1 className="project__title">{projects[index].title}</h1>
-            <Link
-              className="topnav__link"
-              to={`/project/${
-                projects[index === nbProjects - 1 ? 0 : index + 1].id
-              }`}
-            >
-              Projet suivant
-              <FontAwesomeIcon className="topnav__icon" icon={faChevronRight} />
-            </Link>
-          </div>
-          <div className="projectpage__project project">
-            <div className="section-1">
-              <div className="project__description">
-                <p className="project__description--about">
-                  {projects[index].about}
-                </p>
-                <p className="project__description--more">
-                  {projects[index].description}
-                </p>
-              </div>
-              <div className="project__gallery">
-                <img
-                  src={projects[index].pictures[0]}
-                  alt={projects[index].title}
-                />
-              </div>
+        <div className="projectpage__topnav topnav">
+          <Link
+            className="topnav__link"
+            to={`/project/${
+              projects[index === 0 ? nbProjects - 1 : index - 1].id
+            }`}
+          >
+            <FontAwesomeIcon className="topnav__icon" icon={faChevronLeft} />
+            Projet précédent
+          </Link>
+          <h1 className="project__title">{projects[index].title}</h1>
+          <Link
+            className="topnav__link"
+            to={`/project/${
+              projects[index === nbProjects - 1 ? 0 : index + 1].id
+            }`}
+          >
+            Projet suivant
+            <FontAwesomeIcon className="topnav__icon" icon={faChevronRight} />
+          </Link>
+        </div>
+        <div className="projectpage__project project">
+          <div className="section-1">
+            <div className="project__description">
+              <p className="project__description--about">
+                {projects[index].about}
+              </p>
+              <p className="project__description--more">
+                {projects[index].description}
+              </p>
             </div>
-            <div className="section-2">
-              <Collapse label="Objectifs">
-                <ul className="dropdown__content">
-                  {projects[index].objectives.map((objectif) => (
-                    <li key={`${objectif}-${projects[index].id}`}>
-                      {objectif}
-                    </li>
-                  ))}
-                </ul>
-              </Collapse>
-              <Collapse label="Compétences développées">
-                <ul className="dropdown__content">
-                  {projects[index].skills.map((skill) => (
-                    <li key={`${skill}-${projects[index].id}`}>{skill}</li>
-                  ))}
-                </ul>
-              </Collapse>
-              <Collapse label="Technologies utilisées">
-                <ul className="dropdown__content">
-                  {projects[index].technos.map((techno) => (
-                    <li key={`${techno}-${projects[index].id}`}>{techno}</li>
-                  ))}
-                </ul>
-              </Collapse>
+            <div className="project__gallery">
+              <img
+                src={projects[index].pictures[0]}
+                alt={projects[index].title}
+              />
             </div>
           </div>
-          <div className="projectpage__bottomlinks bottomlinks">
-            {projects[index].url && (
-              <a
-                className="bottomlinks__link"
-                href={projects[index].url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faLink} />
-                <span>Accéder au site</span>
-              </a>
-            )}
+          <div className="section-2">
+            <Collapse label="Objectifs">
+              <ul className="dropdown__content">
+                {projects[index].objectives.map((objectif) => (
+                  <li key={`${objectif}-${projects[index].id}`}>{objectif}</li>
+                ))}
+              </ul>
+            </Collapse>
+            <Collapse label="Compétences développées">
+              <ul className="dropdown__content">
+                {projects[index].skills.map((skill) => (
+                  <li key={`${skill}-${projects[index].id}`}>{skill}</li>
+                ))}
+              </ul>
+            </Collapse>
+            <Collapse label="Technologies utilisées">
+              <ul className="dropdown__content">
+                {projects[index].technos.map((techno) => (
+                  <li key={`${techno}-${projects[index].id}`}>{techno}</li>
+                ))}
+              </ul>
+            </Collapse>
+          </div>
+        </div>
+        <div className="projectpage__bottomlinks bottomlinks">
+          {projects[index].url && (
             <a
               className="bottomlinks__link"
-              href={projects[index].repo}
+              href={projects[index].url}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} />
-              <span>Repo GitHub</span>
+              <FontAwesomeIcon icon={faLink} />
+              <span>Accéder au site</span>
             </a>
-          </div>
+          )}
+          <a
+            className="bottomlinks__link"
+            href={projects[index].repo}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} />
+            <span>Repo GitHub</span>
+          </a>
         </div>
       </div>
     </Layout>

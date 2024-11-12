@@ -4,9 +4,9 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 //
 
-const TrainingCard = ({ data, layout }) => {
+const TrainingCard = ({ data }) => {
   return (
-    <div className={layout}>
+    <div className="training-layout">
       {data.map((training) => (
         <article key={`training-card-${training.id}`} className="training-card">
           <h3 className="training-card__title">{training.position}</h3>
@@ -14,9 +14,7 @@ const TrainingCard = ({ data, layout }) => {
             <p className="training-card__en-tete--category">
               {training.category}
             </p>
-            &#903;
             <p className="training-card__en-tete--period">{training.period}</p>
-            &#903;
             {training.organization && (
               <div className="training-card__organization">
                 <img

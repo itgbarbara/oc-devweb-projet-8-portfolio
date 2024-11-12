@@ -1,36 +1,39 @@
 @import './config.scss';
-.homepage-section {
-    width: 100%;
 
-    .layout {
-        @include main-layout;
-        padding-block: 2rem;
-        margin-bottom: 20px;
-    }
+.homepage-section {
+    @include main-layout;
+    width: 100%;
+    padding-block: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 15px;
 
     &__title {
         color: $accent-color;
         font-family: $title-font;
-        text-align: center;
-        margin-bottom: 30px;
         font-size: 2rem;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        &--about {
+            text-align: left;
+        }
     }
 }
 
 .about {
-    .layout {
-        min-height: calc(88vh);
-        background-color: $neutral-color;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 2rem;
-        max-width: 90%; // OU ALORS METTRE DES MARGES A DROITE ET A GAUCHE ?
-        border-radius: 15px;
+    @include centered-row;
+    min-height: calc(88vh);
+    background-color: $neutral-color;
+    gap: 2rem;
+
+    .max-width-80 {
+        max-width: 60%;
     }
 
     &__avatar {
-        width: 340px;
+        width: 40%;
+        max-width: 340px;
+        min-width: 200px;
     }
 
     &__introduction {
@@ -70,69 +73,24 @@
     }
 }
 
-#contact {
-    .layout {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-}
+// #skills {
+
+// }
 
 #portfolio {
-    .layout {
-        background-color: $neutral-color;
-        max-width: 90%;
-        border-radius: 15px;
-    }
+    background-color: $neutral-color;
 }
 
 #training {
-    .layout {
-        display: flex;
-        flex-direction: column;
-    }
+    // MIXIN
+    display: flex;
+    flex-direction: column;
+}
 
-    .training-layout {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .training-card {
-        // background-color: lighten($main-color, 50%);
-        border: 3px lighten($main-color, 30%) solid;
-        border-radius: 15px;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-
-        &__title {
-            font-size: 1.3rem;
-            color: $main-color;
-        }
-
-        
-        &__en-tete {
-            display: flex;
-            gap: 0.5rem;
-            color: grey;
-        }
-
-        &__organization {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-
-            &--logo {
-                height: 20px;
-            }
-
-            &--url {
-                display: flex;
-                gap: 0.3rem;
-            }
-        }
-    }
+#contact {
+    // MIXIN
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

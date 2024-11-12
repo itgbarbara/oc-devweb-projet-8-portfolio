@@ -1,0 +1,46 @@
+@import './config.scss';
+
+.training-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.training-card {
+    display: flex;
+    flex-direction: column;
+    border: 3px lighten($main-color, 30%) solid;
+    border-radius: 15px;
+    padding: 20px;
+    gap: 0.5rem;
+
+    &__title {
+        font-size: 1.3rem;
+        color: $main-color;
+    }
+    
+    &__en-tete {
+        display: flex;
+        gap: 0.5rem;
+        color: grey;
+
+        *:not(:last-child)::after {
+            content:' · ';
+        }
+    }
+
+    &__organization {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        &--logo {
+            height: 20px;
+        }
+
+        &--url {
+            display: flex;
+            gap: 0.3rem;
+        }
+    }
+}

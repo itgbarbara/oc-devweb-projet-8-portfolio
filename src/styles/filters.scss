@@ -1,13 +1,9 @@
 .filter-bar {
-    position: relative;
-    display: flex;
+    @include centered-row;
     gap: 1.5rem;
-    justify-content: center;
-    align-items: center;
 
     &__btn {
-        position: relative;
-        padding: 0.3rem 0.5rem;
+        padding: 0.25rem 0.5rem;
         border-radius: 10px;
         transition: all .2s ease-in-out;
 

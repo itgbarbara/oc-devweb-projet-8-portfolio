@@ -2,9 +2,7 @@
 
 .modal {
     &__background {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include centered-row;
         position: fixed;
         top: 0;
         left: 0;
@@ -44,12 +42,8 @@
         color: $main-color;
         font-family: 'lexend Deca';
         font-size: 2rem;
-    }
-
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
+        margin-bottom: 20px;
+        text-align: center;
     }
 
     &__close-btn {

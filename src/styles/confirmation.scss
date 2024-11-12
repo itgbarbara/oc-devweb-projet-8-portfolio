@@ -1,9 +1,7 @@
 @import './config.scss';
 
 .confirmation__background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	@include centered-row;
     position: fixed;
 	top: 0;
 	left: 0;
