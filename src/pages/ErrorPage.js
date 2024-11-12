@@ -1,6 +1,9 @@
-import React from 'react'
-import Layout from '../components/Layout'
+// Librairies externes
 import { Link } from 'react-router-dom'
+// Components
+import Layout from '../components/Layout'
+
+//
 
 const ErrorPage = () => {
   return (

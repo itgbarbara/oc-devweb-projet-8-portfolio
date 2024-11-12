@@ -1,10 +1,16 @@
-import React from 'react'
+// Hooks
 import { useContext } from 'react'
+
+// Context
 import { ModalContext } from '../../utils/context/ModalProvider'
+
+// Components
 import CallToActionBtn from '../CallToActionBtn'
 
+//
+
 const ContactSection = () => {
-  // Récupération des données grâce au contexte
+  // Récupération de la fonction d'ouverture de la modale de contact grâce au contexte
   const { openContactModal } = useContext(ModalContext)
 
   return (

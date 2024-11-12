@@ -1,12 +1,18 @@
-import React from 'react'
-import Modal from 'react-modal'
+// Hooks
 import { useState, useEffect } from 'react'
+// Components
+import Modal from 'react-modal'
+// Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 
+//
+
 const Modale = ({ isOpen, closeModal, modalTitle, children }) => {
+  // Variable d'état pour gérer la fermeture de la modale
   const [isModalClosing, setIsModalClosing] = useState(false)
 
+  // Fonction pour gérer la fermeture de la modale et lancer une animation
   const handleModalClosing = () => {
     setIsModalClosing(true) // Active l'état de fermeture pour jouer l'animation de sortie
     setTimeout(() => {
@@ -15,7 +21,7 @@ const Modale = ({ isOpen, closeModal, modalTitle, children }) => {
     }, 500) // La durée de l'animation de sortie (0.5s)
   }
 
-  // Réinitialiser l'état isClosing à chaque ouverture
+  // Réinitialisation de l'état 'isClosing' à chaque ouverture
   useEffect(() => {
     if (isOpen) {
       setIsModalClosing(false)

@@ -1,5 +1,7 @@
-import React from 'react'
+// Components
 import FilterBtn from './FilterBtn'
+
+//
 
 const FilterBar = ({
   categories,

@@ -1,10 +1,16 @@
-import React from 'react'
+// Hooks
 import { useState, useEffect } from 'react'
+
+// Components
 import SkillCards from './SkillCards'
 
+//
+
 const SkillsSection = () => {
+  // Déclaration d'une variable d'état pour stocker les compétences
   const [skills, setSkills] = useState([])
 
+  // Simulation appel API
   useEffect(() => {
     fetch('/data/skills.json').then((response) =>
       response

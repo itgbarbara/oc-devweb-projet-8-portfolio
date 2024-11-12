@@ -1,8 +1,14 @@
-import React from 'react'
+// Hooks
+import { useContext } from 'react'
+// Librairies externes
 import { useParams, Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+// Context
+import { DataContext } from '../utils/context/DataProvider'
+// Components
 import Layout from '../components/Layout'
 import Collapse from '../components/Collapse'
+// Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faChevronLeft,
@@ -10,14 +16,14 @@ import {
   faLink,
 } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
-import { useContext } from 'react'
-import { DataContext } from '../utils/context/DataProvider'
+
+//
 
 const Project = () => {
   // Récupération de l'id qui se trouve dans l'url
   const { id } = useParams()
 
-  // Récupération des données des projets grâce au contexte
+  // Récupération des projets et de l'état de chargement grâce au contexte
   const { projects, loading } = useContext(DataContext)
 
   const nbProjects = projects.length

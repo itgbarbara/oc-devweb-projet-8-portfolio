@@ -1,5 +1,7 @@
-import React from 'react'
-import Skill from './Skill'
+// Components
+import Tech from './Tech'
+
+//
 
 const SkillCards = ({ data, layout }) => {
   return (
@@ -8,7 +10,7 @@ const SkillCards = ({ data, layout }) => {
         <article key={`skill-card-${skill.category}`} className="skillcard">
           <div className="skillcard__content">
             <h3 className="skillcard__title">{skill.category}</h3>
-            <Skill skill={skill} />
+            <Tech skill={skill} />
           </div>
         </article>
       ))}

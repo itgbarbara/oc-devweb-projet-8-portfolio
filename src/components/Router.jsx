@@ -1,11 +1,15 @@
-import React from 'react'
+// Librairies externes
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+// Components
+import ContactModal from './Contact/ContactModal'
 import HomePage from '../pages/HomePage'
 import ProjectPage from '../pages/ProjectPage'
 import ErrorPage from '../pages/ErrorPage'
+// Context Provider
 import DataProvider from '../utils/context/DataProvider'
 import ModalProvider from '../utils/context/ModalProvider'
-import ContactModal from './Contact/ContactModal'
+
+//
 
 const Router = () => {
   return (

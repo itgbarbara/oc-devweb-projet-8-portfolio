@@ -1,7 +1,9 @@
-import React from 'react'
+// Components
 import Header from './Header'
 import Footer from './Footer'
 import BackToTopBtn from '../components/BackToTopBtn'
+
+//
 
 const Layout = ({ children }) => {
   return (

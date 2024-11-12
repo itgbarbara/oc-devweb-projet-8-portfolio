@@ -1,6 +1,8 @@
-import React from 'react'
+// Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
+
+//
 
 const TrainingCard = ({ data, layout }) => {
   return (

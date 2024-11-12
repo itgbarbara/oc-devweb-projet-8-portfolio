@@ -1,11 +1,14 @@
-import React from 'react'
+// Hooks
+import { useContext } from 'react'
+// Components
 import Modale from '../Modal'
 import ContactForm from './ContactForm'
-import { useContext } from 'react'
+// Context
 import { ModalContext } from '../../utils/context/ModalProvider'
 
+//
+
 const ContactModal = () => {
-  // Récupération des données grâce au contexte
   const { isContactModalOpen, closeContactModal } = useContext(ModalContext)
 
   return (

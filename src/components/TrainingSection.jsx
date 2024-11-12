@@ -1,10 +1,14 @@
-import React from 'react'
-import TrainingCard from './TrainingCard'
+// Hooks
 import { useState, useEffect } from 'react'
+// Components
+import TrainingCard from './TrainingCard'
+
+//
 
 const TrainingSection = () => {
   const [training, setTraining] = useState([]) // Tableau qui contiendra les projets
 
+  // Simulation appel API
   useEffect(() => {
     fetch('/data/training.json').then((response) =>
       response

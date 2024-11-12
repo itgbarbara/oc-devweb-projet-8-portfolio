@@ -1,6 +1,4 @@
-import React from 'react'
-
-const Skill = ({ skill }) => {
+const Tech = ({ skill }) => {
   return (
     <div className="tech-container">
       {skill.techs.map((tech) => (
@@ -18,4 +16,4 @@ const Skill = ({ skill }) => {
   )
 }
 
-export default Skill
+export default Tech

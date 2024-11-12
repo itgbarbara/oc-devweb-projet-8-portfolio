@@ -1,5 +1,7 @@
-import React from 'react'
+// Librairies externes
 import { Link } from 'react-router-dom'
+
+//
 
 const ProjectCards = ({ data, layout }) => {
   return (

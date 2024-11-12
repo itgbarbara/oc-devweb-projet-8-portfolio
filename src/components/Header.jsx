@@ -1,11 +1,14 @@
-import React from 'react'
-// import { NavLink, Link } from 'react-router-dom'
-import { HashLink } from 'react-router-hash-link'
+// Hooks
 import { useContext } from 'react'
+// Librairies externes
+import { HashLink } from 'react-router-hash-link'
+// Context
 import { ModalContext } from '../utils/context/ModalProvider'
 
+//
+
 const Header = () => {
-  // Récupération des données grâce au contexte
+  // Récupération de la fonction d'ouverture de la modale de contact grâce au contexte
   const { openContactModal } = useContext(ModalContext)
 
   return (

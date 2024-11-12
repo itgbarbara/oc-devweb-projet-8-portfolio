@@ -1,6 +1,8 @@
-import React from 'react'
+// Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSquareGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+
+//
 
 const Footer = () => {
   return (

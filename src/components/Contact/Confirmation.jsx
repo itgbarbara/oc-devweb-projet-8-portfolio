@@ -1,5 +1,7 @@
-import React from 'react'
+// Librairies externes
 import Modal from 'react-modal'
+
+//
 
 const Confirmation = ({ isOpen, isClosing, closeModal, children }) => {
   return (

@@ -1,11 +1,16 @@
-import React from 'react'
+// Assets
 import avatar from '../assets/images/avatar.jpg'
+// Hooks
 import { useContext } from 'react'
+// Context
 import { ModalContext } from '../utils/context/ModalProvider'
+// Components
 import CallToActionBtn from './CallToActionBtn'
 
+//
+
 const About = () => {
-  // Récupération des données grâce au contexte
+  // Récupération de la fonction d'ouverture de la modale de contact grâce au contexte
   const { openContactModal } = useContext(ModalContext)
 
   return (

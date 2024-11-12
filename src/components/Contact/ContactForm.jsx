@@ -1,9 +1,14 @@
-import React from 'react'
+// Hooks
 import { useState, useEffect, useRef, useContext } from 'react'
-import { ModalContext } from '../../utils/context/ModalProvider'
 import { useForm } from 'react-hook-form'
+// Librairies externes
 import emailjs from 'emailjs-com'
+// Context
+import { ModalContext } from '../../utils/context/ModalProvider'
+// Components
 import Confirmation from './Confirmation'
+
+//
 
 const ContactForm = () => {
   // Récupération de la fonction de fermeture de la modale de contact grâce au contexte

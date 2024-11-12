@@ -1,9 +1,13 @@
-import React from 'react'
+// Hooks
 import { useState, useEffect } from 'react'
+// Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpLong } from '@fortawesome/free-solid-svg-icons'
 
+//
+
 const BackToTopBtn = () => {
+  // Déclaration d'une variable d'état pour gérer la visibilité du bouton
   const [isVisible, setIsVisible] = useState(false)
 
   const toggleVisibility = () => {
