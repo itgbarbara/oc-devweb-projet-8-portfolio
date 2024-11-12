@@ -24,7 +24,7 @@ const ProjectCards = ({ data }) => {
             <img
               className="card__img"
               src={project.pictures[0]}
-              alt={`Couverture ${project.title}`}
+              alt={`Projet ${project.title}`}
             />
             <h3 className="card__title">{project.title}</h3>
           </article>

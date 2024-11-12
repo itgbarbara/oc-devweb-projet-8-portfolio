@@ -39,6 +39,7 @@ const BackToTopBtn = () => {
           onClick={scrollToTop}
           className={`back-to-top ${isVisible && 'back-to-top--visible'}`}
         >
+          <p className="hidden">Haut de page</p>
           <FontAwesomeIcon icon={faArrowUpLong} />
         </button>
       )}

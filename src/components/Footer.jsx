@@ -16,6 +16,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <p className="hidden">Profil GitHub</p>
           <FontAwesomeIcon icon={faSquareGithub} className="footer__logo" />
         </a>
         <a
@@ -23,6 +24,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
+          <p className="hidden">Profil Linkedin</p>
           <FontAwesomeIcon icon={faLinkedin} className="footer__logo" />
         </a>
       </div>
