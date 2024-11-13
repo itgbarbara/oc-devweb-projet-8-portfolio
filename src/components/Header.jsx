@@ -4,9 +4,6 @@ import { useContext } from 'react'
 import { HashLink } from 'react-router-hash-link'
 // Context
 import { ModalContext } from '../utils/context/ModalProvider'
-// Icones Font Awesome
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 //
 
@@ -45,9 +42,6 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      {/* <div className="header__hamburger-menu">
-        <FontAwesomeIcon icon={faBars} className="icon" />
-      </div> */}
     </header>
   )
 }
