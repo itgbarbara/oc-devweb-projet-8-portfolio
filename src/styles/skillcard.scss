@@ -41,6 +41,7 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+    flex-wrap: wrap;
     gap: 20px;
 
     @include for-small-tablets {
