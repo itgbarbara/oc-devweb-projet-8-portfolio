@@ -1,7 +1,7 @@
 @import './config.scss';
 
 .footer {
-    @include space-between-row;
+    @include flex-row(space-between);
     width: 100%;
     color: $neutral-color;
     background-color: darken($main-color, 20%);
@@ -16,7 +16,6 @@
 
     @include for-small-tablets {
         @include flex-column;
-        align-items: center;
         font-size: 0.75rem;
         padding: 1rem;
     }

@@ -6,13 +6,14 @@
     grid-template-columns: repeat(2, minmax(350px, 1fr)); // A CHANGER
     justify-items: center;
     border-radius: 25px;
-    padding: 25px;
-    gap: 40px;
+    padding: 1.25rem;
+    column-gap: 5%;
+    row-gap: 2rem;
 
     @include for-tablets {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
         padding: 30px;
-        gap: 20px;
+        // column-gap: 20px;
     }
 
     @include for-smartphones {
@@ -74,7 +75,7 @@
                 z-index: 2;
     
                 @include for-tablets {
-                    font-size: 0.9rem;
+                    font-size: 0.85rem;
                 }
             }
 
@@ -85,13 +86,17 @@
                 justify-content: flex-end;
                 background: rgba(darken($main-color,20%), 0.8);
                 opacity: 0;
-                padding: 20px;
+                padding: 1.25rem;
                 transition: opacity .2s ease-in-out;
             }
 
             &__description {
                 color: $neutral-color;
                 margin-bottom: 1rem;
+
+                @include for-tablets {
+                    font-size: 0.8rem;
+                }
             }
 
             &__tags {

@@ -82,31 +82,16 @@ $title-font: 'Lexend Deca';
 }
     // Disposition
 
-@mixin flex-column($vertical-align : flex-start, $horizontal-align : flex-start) {
+@mixin flex-column($horizontal-align : center) {
     display: flex;
     flex-direction: column;
-    justify-content: $vertical-align;
     align-items: $horizontal-align;
 }
 
-@mixin centered-column {
-    @include flex-column;
-    align-items: center;
-}
-
-@mixin row-display {
+@mixin flex-row($horizontal-align : flex-start) {
     display: flex;
     align-items: center;
-}
-
-@mixin centered-row {
-    @include row-display;
-    justify-content: center;
-}
-
-@mixin space-between-row {
-    @include row-display;
-    justify-content: space-between;
+    justify-content: $horizontal-align;
 }
 
 @mixin overlay {
@@ -151,4 +136,12 @@ $title-font: 'Lexend Deca';
         to { opacity: 0; }
     }
     animation: fadeIn 0.5s forwards;
+}
+
+@mixin pulse {
+    @keyframes pulse {
+        from { transform: scale(1); }
+        to { transform: scale(1.1); }
+      }
+    animation: pulse 1s infinite ease-in-out alternate;
 }

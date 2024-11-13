@@ -1,7 +1,7 @@
 @import './config.scss';
 
 .body-container {
-    @include centered-column;
+    @include flex-column;
     width: 100%;
     min-height: 100vh;
 

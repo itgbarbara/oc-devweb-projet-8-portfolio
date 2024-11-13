@@ -28,7 +28,7 @@
         }
 
         .navlinks {
-            @include row-display;
+            @include flex-row;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 3.5rem;
@@ -40,16 +40,6 @@
             @include for-smartphones {
                 gap: 1.6rem;      
             }
-        }
-    }
-
-    &__hamburger-menu {
-        display: flex;
-        justify-content: flex-end;
-
-        .icon {
-            font-size: 1.5rem;
-            padding: 0.8rem;
         }
     }
 }

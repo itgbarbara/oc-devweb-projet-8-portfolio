@@ -5,7 +5,7 @@
     // width: 50%;
 
     &__label {
-        @include row-display;
+        @include flex-row;
         gap: 0.8rem;
         color: $main-color;
         font-weight: 700;

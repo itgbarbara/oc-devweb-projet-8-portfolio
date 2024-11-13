@@ -2,7 +2,7 @@
 
 .modal {
     &__background {
-        @include centered-row;
+        @include flex-row(center);
         position: fixed;
         top: 0;
         left: 0;
@@ -23,11 +23,10 @@
     &__wrapper {
         background-color: $neutral-color;
         max-width: calc(80vh);
-        max-height: calc(80vh);
         overflow: auto;
         position: relative;
-        border-radius: 10px;
-        padding: 20px;
+        border-radius: 15px;
+        padding: 1.25rem;
         
         &--show {
             @include slideIn; // Animation d'entrée

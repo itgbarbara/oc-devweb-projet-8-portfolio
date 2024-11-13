@@ -9,7 +9,6 @@
 
     @include for-tablets {
         @include flex-column;
-        align-items: center;
     }
 }
 
@@ -42,18 +41,13 @@
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 20px;
-
-    @include for-small-tablets {
-        @include flex-column;
-        align-items: center;
-    }
+    gap: 1.25rem;
 
     .tech {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 5px;
+        gap: 0.25rem;
         filter: grayscale(0%);
         transition: filter 0.3s ease;
 
