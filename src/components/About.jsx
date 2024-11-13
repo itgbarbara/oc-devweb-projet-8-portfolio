@@ -4,8 +4,6 @@ import avatar from '../assets/images/avatar.jpg'
 import { useContext } from 'react'
 // Context
 import { ModalContext } from '../utils/context/ModalProvider'
-// Components
-import CallToActionBtn from './CallToActionBtn'
 
 //
 
@@ -39,11 +37,12 @@ const About = () => {
         </div>
         <div className="about__call-to-action">
           <p>Vous souhaitez que l'on travaille ensemble ? </p>
-          <CallToActionBtn
+          <button
             onClick={openContactModal}
-            label="Contactez-moi"
-            mod="contact"
-          />
+            className={`cta-btn cta-btn--about`}
+          >
+            Contactez-moi
+          </button>
         </div>
       </div>
     </section>
