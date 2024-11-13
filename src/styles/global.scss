@@ -12,7 +12,6 @@
 @import './projectCards.scss';
 @import './projectPage.scss';
 @import './collapse.scss';
-@import './callToActionBtn.scss';
 @import './skillcard.scss';
 @import './trainingCard.scss';
 
@@ -48,6 +47,10 @@ li {
     list-style: none;
 }
 
+fieldset {
+    border: none;
+}
+
 input, textarea {
     font-family: inherit;
     border: none;
@@ -67,4 +70,20 @@ button, input[type="submit"] {
 
 .hidden {
     display: none;
+}
+
+.flex-row {
+    @include flex-row;
+}
+
+.flex-column {
+    @include flex-column;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.w-50 {
+    width: 50%;
 }

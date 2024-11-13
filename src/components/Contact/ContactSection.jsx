@@ -1,11 +1,7 @@
 // Hooks
 import { useContext } from 'react'
-
 // Context
 import { ModalContext } from '../../utils/context/ModalProvider'
-
-// Components
-import CallToActionBtn from '../CallToActionBtn'
 
 //
 
@@ -19,11 +15,9 @@ const ContactSection = () => {
         Contact
       </h2>
       <p>Vous souhaitez me confier un projet ?</p>
-      <CallToActionBtn
-        onClick={openContactModal}
-        label="Ecrivez-moi !"
-        mod="contact"
-      />
+      <button onClick={openContactModal} className={`cta-btn cta-btn--contact`}>
+        Ecrivez-moi !
+      </button>
     </section>
   )
 }
