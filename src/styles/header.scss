@@ -17,6 +17,7 @@
     &__navbar {
         color: darken($main-color, 20%);
         font-size: 1.5rem;
+        // display: none;
 
         @include for-tablets {
             font-size: 1.25rem;
@@ -39,6 +40,16 @@
             @include for-smartphones {
                 gap: 1.6rem;      
             }
+        }
+    }
+
+    &__hamburger-menu {
+        display: flex;
+        justify-content: flex-end;
+
+        .icon {
+            font-size: 1.5rem;
+            padding: 0.8rem;
         }
     }
 }

@@ -66,7 +66,7 @@ const Project = () => {
             }`}
           >
             <FontAwesomeIcon className="topnav__icon" icon={faChevronLeft} />
-            Projet précédent
+            <span className="topnav__name">Projet précédent</span>
           </Link>
           <h1 className="project__title">{projects[index].title}</h1>
           <Link
@@ -75,7 +75,7 @@ const Project = () => {
               projects[index === nbProjects - 1 ? 0 : index + 1].id
             }`}
           >
-            Projet suivant
+            <span className="topnav__name">Projet suivant</span>
             <FontAwesomeIcon className="topnav__icon" icon={faChevronRight} />
           </Link>
         </div>

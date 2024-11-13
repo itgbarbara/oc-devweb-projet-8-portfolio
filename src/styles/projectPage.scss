@@ -18,14 +18,23 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            min-width: 200px;
-            padding: 7px 11px;
+            padding: 0.25rem 1rem;
             border-radius: 10px;
             transition: all 0.2s ease-in-out;
+
+            @include for-tablets {
+                justify-content: center;
+            }
 
             &:hover {
                 color: $neutral-color;
                 background-color: lighten($accent-color, 10%);
+            }
+        }
+
+        &__name {
+            @include for-tablets {
+                display: none;
             }
         }
 
@@ -41,10 +50,15 @@
             display: flex;
             gap: 2rem;
             margin-bottom: 30px;
+
+            @include for-tablets {
+                flex-direction: column;
+            }
         }
 
         &__description {
             order: 2;
+            text-align: justify;
         }
 
         &__title {
@@ -52,6 +66,10 @@
             color: $accent-color;
             font-size: 3rem;
             text-align: center;
+
+            @include for-tablets {
+                font-size: 2rem;
+            }
         }
 
         &__about {
@@ -64,6 +82,10 @@
             img {
                 max-width: 500px;
                 box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                @include for-tablets {
+                    max-width: 100%;
+                }
             }
         }
     }
