@@ -1,23 +1,35 @@
 @import './config.scss';
 
+.contact {
+    max-width: 100%;
+}
+
 .contact-form {
     @include flex-column;
-    align-items: center;
-    min-width: calc(70vh);
     gap: 1rem;
+    background-color: $neutral-color;
+    padding: 1.25rem;
+    border-radius: 15px;
 
-    .display-inline {
+    .flex-row {
         width: 100%;
-        display: flex;
         justify-content: space-between;
-        gap: 20px;
+        gap: 1.13rem;
+
+        @include for-small-tablets {
+            flex-direction: column;
+        }
     }
 
-    .width-50 {
-        width: 50%;
+    .w-50 {
         display: flex;
         flex-direction: column;
+        justify-content: flex-start;
         align-items: flex-start;
+
+        @include for-small-tablets {
+            width: 100%;
+        }
     }
 
     &__field {

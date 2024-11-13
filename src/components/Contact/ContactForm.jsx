@@ -76,14 +76,14 @@ const ContactForm = () => {
   }
 
   return (
-    <div>
+    <div className={`contact`}>
       <form
         className="contact-form"
         ref={form}
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="display-inline">
-          <div className="width-50">
+        <fieldset className="flex-row">
+          <div className="w-50">
             <input
               className="contact-form__field contact-form__field--username"
               type="text"
@@ -104,7 +104,7 @@ const ContactForm = () => {
             />
             {errors.username && <span>{errors.username.message}</span>}
           </div>
-          <div className="width-50">
+          <div className="w-50">
             <input
               className="contact-form__field contact-form__field--email"
               type="email"
@@ -119,7 +119,7 @@ const ContactForm = () => {
               <span>Veuillez renseigner votre e-mail</span>
             )}
           </div>
-        </div>
+        </fieldset>
         <input
           className="contact-form__field contact-form__field--subject"
           type="text"
