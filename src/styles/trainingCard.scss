@@ -12,12 +12,23 @@
     &__title {
         font-size: 1.3rem;
         color: $main-color;
+
+        @include for-small-tablets {
+            font-size: 1rem;
+        }
     }
     
     &__en-tete {
         display: flex;
+        align-items: center;
         gap: 0.5rem;
         color: #757575;
+
+        * {
+            @include for-tablets {
+                font-size: 0.9rem;
+            }
+        }
 
         *:not(:last-child)::after {
             content:' • ';
@@ -36,6 +47,18 @@
         &--url {
             display: flex;
             gap: 0.3rem;
+        }
+    }
+
+    &__description p {
+        font-size: 1em;
+
+        @include for-small-tablets {
+            font-size: 0.9em;
+        }
+
+        @include for-smartphones {
+            font-size: 0.81rem;
         }
     }
 }

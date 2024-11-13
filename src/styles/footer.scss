@@ -7,15 +7,18 @@
     background-color: darken($main-color, 20%);
     font-size: 1.5rem;
     gap: 20px;
-    padding: 40px 120px 20px 120px;
+    padding: 2.5rem 7rem;
 
     @include for-tablets {
         font-size: 1.13rem;
+        padding: 2rem;
     }
 
-    @include for-smartphones {
+    @include for-small-tablets {
+        @include flex-column;
+        align-items: center;
         font-size: 0.75rem;
-        padding: 50px 120px 50px 120px;
+        padding: 1rem;
     }
 
     &__icons {

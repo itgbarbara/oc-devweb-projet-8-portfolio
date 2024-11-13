@@ -6,6 +6,11 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
+
+    @include for-tablets {
+        @include flex-column;
+        align-items: center;
+    }
 }
 
 .skillcard {
@@ -14,6 +19,14 @@
     background-color: lighten($main-color, 55%);
     border-radius: 36% 64% 47% 53% / 57% 45% 55% 43%;
     padding: 20px 10px 50px 10px;
+
+    @include for-tablets {
+        width: 80%;
+    }
+
+    @include for-smartphones {
+        width: 100%;
+    }
 
     &__title {
         font-family: 'Lexend Deca';
@@ -29,6 +42,11 @@
     justify-content: center;
     align-items: baseline;
     gap: 20px;
+
+    @include for-small-tablets {
+        @include flex-column;
+        align-items: center;
+    }
 
     .tech {
         display: flex;

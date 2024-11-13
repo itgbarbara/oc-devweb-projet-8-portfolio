@@ -1,5 +1,6 @@
 .filter-bar {
     @include centered-row;
+    flex-wrap: wrap;
     gap: 1.5rem;
 
     &__btn {
