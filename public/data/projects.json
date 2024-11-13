@@ -69,7 +69,7 @@
             "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte",
             "Permettre à l'utilisateur d'afficher et de filtrer les travaux sur la page d'accueil",
             "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie à l'aide d'une boîte de dialogue modale (à créer)",
-            "Mémoriser les données récupérées dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté",
+            "Sauvegarder les données récupérées via l'API dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté",
             "Tester les nouvelles fonctionnalités grâce à la mise à disposition d'une API http et de sa documentation"
         ],
         "skills": [
@@ -77,7 +77,7 @@
             "Gestion des évènements utilisateurs",
             "Récupération de la saisie des formulaires",
             "Communication avec une API et opérations asynchrones",
-            "Gestion du LocalStorage"
+            "Sauvegarde de données dans le LocalStorage du navigateur"
         ],
         "url":"",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-3-portfolio-architecte-sophie-bluel"
