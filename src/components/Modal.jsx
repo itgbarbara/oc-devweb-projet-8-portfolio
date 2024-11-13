@@ -1,6 +1,6 @@
 // Hooks
 import { useState, useEffect } from 'react'
-// Components
+// Librairies externes
 import Modal from 'react-modal'
 // Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
