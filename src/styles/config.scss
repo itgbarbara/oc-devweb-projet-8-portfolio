@@ -46,6 +46,7 @@ $title-font: 'Lexend Deca';
     transition: all 0.2s ease-in-out;
 
     &:hover {
+        transform: scale(1.05);
         color: $neutral-color;
         background-color: $accent-color;
     }
