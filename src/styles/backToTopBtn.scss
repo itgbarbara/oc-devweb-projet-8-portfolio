@@ -5,7 +5,7 @@
     height: 40px;
     border-radius: 50%;
     position: fixed;
-    bottom: 30px;
+    bottom: 150px;
     right: 30px;
     opacity: 0; // Bouton invisible par défaut
     visibility: hidden;
@@ -21,7 +21,7 @@
     }
 
     &--visible {
-        opacity: 1;
+        opacity: 1; // Devient visible lorsqu'on scroll
         visibility: visible;
     }
 }
