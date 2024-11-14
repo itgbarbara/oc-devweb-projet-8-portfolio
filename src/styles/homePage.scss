@@ -53,8 +53,7 @@
     }
 
     &__introduction {
-        display: flex;
-        flex-direction: column;
+        @include flex-column(flex-start);
         gap: 0.8rem;
         margin-bottom: 2rem;
 
@@ -76,23 +75,11 @@
     }
 
     &__call-to-action {
-        font-size: 1.2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-
-        @include for-small-tablets {
-            font-size: 1em;
-        }
+        font-size: 1em;
+        @include flex-column;
 
         p {
-            font-size: 1em;
             margin-bottom: 0.5rem;
-        }
-
-        button {
-            font-size: 1em;
         }
     }
 }
@@ -105,18 +92,8 @@
     background-color: $neutral-color;
 }
 
-#training {
-    // MIXIN
-    display: flex;
-    flex-direction: column;
-}
-
-#contact {
-    // MIXIN
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+#training, #contact {
+    @include flex-column;
 }
 
 .cta-btn {
@@ -128,7 +105,6 @@
 
     &:hover {
         background-color: $accent-color;
-        // transform: scale(1.05);
         @include pulse;
     }
 }

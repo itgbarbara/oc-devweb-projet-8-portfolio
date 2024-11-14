@@ -10,14 +10,12 @@
     z-index: 2000;
 
     @include for-smartphones {
-        padding-top: 1.25rem;
-        padding-bottom: 1.25rem;
+        padding-block: 1.25rem;
     }
 
     &__navbar {
         color: darken($main-color, 20%);
         font-size: 1.5rem;
-        // display: none;
 
         @include for-tablets {
             font-size: 1.25rem;
@@ -28,8 +26,7 @@
         }
 
         .navlinks {
-            @include flex-row;
-            justify-content: space-around;
+            @include flex-row(space-around);
             flex-wrap: wrap;
             gap: 3.5rem;
 
