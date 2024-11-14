@@ -19,6 +19,7 @@
     
     &__en-tete {
         @include flex-row;
+        flex-wrap: wrap;
         gap: 0.5rem;
         color: #757575;
         margin-bottom: 0.5rem;
