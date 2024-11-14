@@ -3,7 +3,7 @@
 .cards-layout {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(350px, 1fr)); // A CHANGER
+    grid-template-columns: repeat(2, minmax(300px, 1fr)); // A CHANGER
     justify-items: center;
     border-radius: 25px;
     padding: 1.25rem;
@@ -11,9 +11,8 @@
     row-gap: 2rem;
 
     @include for-tablets {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        padding: 30px;
-        // column-gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        padding: 1rem;
     }
 
     @include for-smartphones {
@@ -46,11 +45,11 @@
                 opacity: 1;
             }
     
-            &:hover .card__title {
-                transform: translateY(-300%);
-                font-size: 2.2rem;
-                color: $neutral-color;
-            }
+            // &:hover .card__title {
+            //     transform: translateY(-300%);
+            //     font-size: 2.2rem;
+            //     color: $neutral-color;
+            // }
 
             &:active {
                 transform: scale(1);
@@ -65,14 +64,14 @@
         
             &__title {
                 color: black; // A CHANGER
-                font-size: 1.5rem;
+                font-size: 1.13rem;
                 font-weight: 700;
-                padding: 20px;
+                padding: 1.25rem;
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                transition: all .2s ease-in-out;
-                z-index: 2;
+                // transition: all .2s ease-in-out;
+                // z-index: 2;
     
                 @include for-tablets {
                     font-size: 0.85rem;
@@ -81,8 +80,8 @@
 
             &__overlay {
                 @include overlay;
+                @include flex-column(flex-start);
                 border-radius: inherit;
-                @include flex-column;
                 justify-content: flex-end;
                 background: rgba(darken($main-color,20%), 0.8);
                 opacity: 0;
@@ -91,12 +90,13 @@
             }
 
             &__description {
+                // font-size: 0.85rem;
                 color: $neutral-color;
                 margin-bottom: 1rem;
 
-                @include for-tablets {
-                    font-size: 0.8rem;
-                }
+                // @include for-tablets {
+                //     font-size: 0.85em;
+                // }
             }
 
             &__tags {

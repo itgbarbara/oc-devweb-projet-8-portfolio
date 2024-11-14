@@ -22,7 +22,8 @@
 
     &__wrapper {
         background-color: $neutral-color;
-        max-width: calc(80vh);
+        width: 80%;
+        max-width: 500px;
         overflow: auto;
         position: relative;
         border-radius: 15px;
