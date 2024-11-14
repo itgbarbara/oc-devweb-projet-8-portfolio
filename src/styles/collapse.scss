@@ -51,7 +51,7 @@
 
     
     .dropdown__content {
-        @include flex-column;
+        @include flex-column(flex-start);
         background-color: white;
         border-radius: 5px;
         gap: 0.5rem;
