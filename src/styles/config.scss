@@ -36,6 +36,21 @@ $title-font: 'Lexend Deca';
     border-radius: 5px;
 }
 
+@mixin button($color, $background-color) {
+    color: $color;
+    background-color: $background-color;
+    @include flex-row(space-between);
+    gap: 0.5rem;
+    padding: 0.5em 1em;
+    border-radius: 25px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+        color: $neutral-color;
+        background-color: $accent-color;
+    }
+}
+
     // Media queries
 
 @mixin for-smartphones {

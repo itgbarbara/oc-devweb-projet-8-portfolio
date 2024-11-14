@@ -89,10 +89,6 @@
     }
 }
 
-// #skills {
-
-// }
-
 #portfolio {
     background-color: $neutral-color;
 }
@@ -102,14 +98,9 @@
 }
 
 .cta-btn {
-    color: $neutral-color;
-    background-color: $main-color;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    transition: all 0.3s ease-out;
+    @include button($neutral-color, $main-color);
 
     &:hover {
-        background-color: $accent-color;
         @include pulse;
     }
 }

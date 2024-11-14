@@ -2,111 +2,93 @@
 
 .projectpage {
     @include main-layout;
-    width: 100%;
+    width: 90%;
     background-color: $neutral-color;
     border-radius: 15px;
     padding-block: 2rem;
     margin-bottom: 30px;
 
-    .topnav {
+    @include for-small-tablets {
+        width: 100%;
+        border-radius: 0%;
+        margin-bottom: 0;
+    }
+}
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    &__link {
+        @include flex-row(space-between);
+        @include button(inherit, transparent);
+
+        @include for-tablets {
+            justify-content: center;
+        }
+    }
+
+    &__name {
+        @include for-tablets {
+            display: none;
+        }
+    }
+}
+
+.project {    
+
+    .general-information {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
+        gap: 2rem;
         margin-bottom: 30px;
 
-        &__link {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0.25rem 1rem;
-            border-radius: 10px;
-            transition: all 0.2s ease-in-out;
-
-            @include for-tablets {
-                justify-content: center;
-            }
-
-            &:hover {
-                color: $neutral-color;
-                background-color: lighten($accent-color, 10%);
-            }
-        }
-
-        &__name {
-            @include for-tablets {
-                display: none;
-            }
-        }
-
-        &__icon {
-            padding: 0 1rem 0 1rem;
+        @include for-tablets {
+            flex-direction: column;
         }
     }
 
-    .project {    
+    &__description {
+        order: 2;
+        text-align: justify;
+    }
 
-        .section-1 {
-            width: 100%;
-            display: flex;
-            gap: 2rem;
-            margin-bottom: 30px;
+    &__title {
+        font-family: $title-font;
+        color: $accent-color;
+        font-size: 3rem;
+        text-align: center;
 
-            @include for-tablets {
-                flex-direction: column;
-            }
-        }
-
-        &__description {
-            order: 2;
-            text-align: justify;
-        }
-
-        &__title {
-            font-family: $title-font;
-            color: $accent-color;
-            font-size: 3rem;
-            text-align: center;
-
-            @include for-tablets {
-                font-size: 2rem;
-            }
-        }
-
-        &__about {
-            margin-bottom: 0.5rem;
-        }
-    
-        &__gallery {
-            // width: 50%;
-
-            img {
-                max-width: 500px;
-                box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-
-                @include for-tablets {
-                    max-width: 100%;
-                }
-            }
+        @include for-tablets {
+            font-size: 2rem;
         }
     }
 
-    .bottomlinks {
-        @include flex-row(center);
-        flex-wrap: wrap;
-        gap: 1rem;
-        margin-bottom: 1rem;
+    &__about {
+        margin-bottom: 0.5rem;
+    }
 
-        &__link {
-            display: flex;
-            gap: 0.3rem;
-            padding: 0.4rem 0.8rem;
-            border-radius: 10px;
-            transition: all 0.2s ease-in-out;
+    &__gallery {
+        img {
+            max-width: 500px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 
-            &:hover {
-                color: $neutral-color;
-                background-color: lighten($accent-color, 10%);
+            @include for-tablets {
+                max-width: 100%;
             }
         }
+    }
+}
+
+.bottomlinks {
+    @include flex-row(center);
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    &__link {
+        @include button(inherit, transparent);
     }
 }

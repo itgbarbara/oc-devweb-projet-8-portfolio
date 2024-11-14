@@ -58,7 +58,7 @@ const Project = () => {
   return (
     <Layout>
       <div className="projectpage">
-        <div className="projectpage__topnav topnav">
+        <div className="topnav">
           <Link
             className="topnav__link"
             to={`/project/${
@@ -79,15 +79,11 @@ const Project = () => {
             <FontAwesomeIcon className="topnav__icon" icon={faChevronRight} />
           </Link>
         </div>
-        <div className="projectpage__project project">
-          <div className="section-1">
+        <div className="project">
+          <div className="general-information">
             <div className="project__description">
-              <p className="project__description--about">
-                {projects[index].about}
-              </p>
-              <p className="project__description--more">
-                {projects[index].description}
-              </p>
+              <p>{projects[index].about}</p>
+              <p>{projects[index].description}</p>
             </div>
             <div className="project__gallery">
               <img
@@ -96,7 +92,7 @@ const Project = () => {
               />
             </div>
           </div>
-          <div className="section-2">
+          <div className="additionnal-information">
             <Collapse label="Objectifs">
               <ul className="dropdown__content">
                 {projects[index].objectives.map((objectif) => (

@@ -13,7 +13,7 @@ function Collapse({ label, children }) {
   return (
     <div className={`collapse`}>
       <button
-        className="collapse__label label"
+        className="label"
         onClick={() => (isOpen ? setIsOpen(false) : setIsOpen(true))}
       >
         <h2 className="label__name">{label}</h2>
@@ -22,11 +22,7 @@ function Collapse({ label, children }) {
           className={`label__btn${isOpen ? ' label__btn--rotate' : ''}`}
         />
       </button>
-      <div
-        className={`collapse__dropdown${
-          isOpen ? ' collapse__dropdown--open' : ''
-        }`}
-      >
+      <div className={`dropdown${isOpen ? ' dropdown--open' : ''}`}>
         {children}
       </div>
     </div>
