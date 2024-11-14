@@ -7,14 +7,14 @@ import { ModalContext } from '../utils/context/ModalProvider'
 
 //
 
-const About = () => {
+const Introduction = () => {
   // Récupération de la fonction d'ouverture de la modale de contact grâce au contexte
   const { openContactModal } = useContext(ModalContext)
 
   return (
-    <section id="about" className="homepage-section about">
-      <img className="about__avatar" src={avatar} alt="avatar" />
-      <div className="max-width-80">
+    <section id="introduction" className="homepage-section introduction">
+      <img className="avatar" src={avatar} alt="avatar" />
+      <div className="about">
         <h1 className="homepage-section__title homepage-section__title--about">
           Barbara ALVAREZ | Développeuse Web Junior
         </h1>
@@ -49,4 +49,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Introduction

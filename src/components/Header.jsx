@@ -13,7 +13,7 @@ const Header = () => {
 
   return (
     <header className="header">
-      <nav className="header__navbar">
+      <nav className="navbar">
         <ul className="navlinks">
           <li>
             <HashLink to="/#top" className="navlinks__link">

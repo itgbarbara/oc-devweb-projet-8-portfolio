@@ -12,31 +12,25 @@
     @include for-smartphones {
         padding-block: 1.25rem;
     }
+}
 
-    &__navbar {
-        color: darken($main-color, 20%);
-        font-size: 1.5rem;
+.navlinks {
+    @include flex-row(space-around);
+    flex-wrap: wrap;
+    gap: 3.5rem;
+
+    @include for-tablets {
+        gap: 2.6rem;
+    }
+
+    @include for-smartphones {
+        gap: 1.6rem;      
+    }
+
+    &__link {
 
         @include for-tablets {
-            font-size: 1.25rem;
-        }
-
-        @include for-smartphones {
-            font-size: 0.75rem;
-        }
-
-        .navlinks {
-            @include flex-row(space-around);
-            flex-wrap: wrap;
-            gap: 3.5rem;
-
-            @include for-tablets {
-                gap: 2.6rem;
-            }
-
-            @include for-smartphones {
-                gap: 1.6rem;      
-            }
+            font-size: 0.85em;
         }
     }
 }
