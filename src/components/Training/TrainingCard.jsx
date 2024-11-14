@@ -38,7 +38,7 @@ const TrainingCard = ({ data }) => {
           </div>
           <div className="training-card__description">
             {training.description.map((item) => (
-              <p>{item}</p>
+              <p key={item}>{item}</p>
             ))}
           </div>
         </article>

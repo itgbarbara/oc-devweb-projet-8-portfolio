@@ -7,8 +7,8 @@
     justify-items: center;
     border-radius: 25px;
     padding: 1.25rem;
-    column-gap: 5%;
-    row-gap: 2rem;
+    column-gap: 2%;
+    row-gap: 1rem;
 
     @include for-tablets {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -45,11 +45,14 @@
                 opacity: 1;
             }
     
-            // &:hover .card__title {
-            //     transform: translateY(-300%);
-            //     font-size: 2.2rem;
-            //     color: $neutral-color;
-            // }
+            &:hover .card__title {
+                // transform: translateY(-300%);
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 2.2rem;
+                color: $neutral-color;
+            }
 
             &:active {
                 transform: scale(1);
