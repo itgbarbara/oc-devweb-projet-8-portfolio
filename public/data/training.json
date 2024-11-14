@@ -6,7 +6,7 @@
         "position":"Formation diplômante 'Développeur web'",
         "organization": {
             "name":"OpenClassrooms",
-            "logo":"/images/logo_openclassrooms.png",
+            "logo":"/images/training_logo/logo_openclassrooms.png",
             "url":"https://openclassrooms.com/fr/paths/899-developpeur-web"
         },
         "description":[
@@ -31,7 +31,7 @@
         "position":"Obtention d'un Grade de Master (bac+5) en Finance d'Entreprise",
         "organization": {
             "name":"ESDES Business School",
-            "logo":"/images/logo_esdes.jpg",
+            "logo":"/images/training_logo/logo_esdes.jpg",
             "url":"https://www.esdes.fr/"
         },
         "description":[

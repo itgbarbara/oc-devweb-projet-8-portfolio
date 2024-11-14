@@ -3,7 +3,7 @@
         "id": "1",
         "title":"Booki",
         "pictures": [
-            "/images/booki-homepage.jpg"
+            "/images/projets/booki/booki_homepage.jpg"
         ],
         "about":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités en HTML/CSS, conformément à une maquette.",
         "description":"Premier projet de la formation OpenClassrooms 'Développeur Web Junior'.",
@@ -42,7 +42,7 @@
         "id": "2",
         "title":"Sophie Bluel",
         "pictures":[
-            "https://www.noiise.com/wp-content/uploads/2022/12/definition-site-web-1.jpg"
+            "/images/projets/sophie_bluel/sophie-bluel_homepage-1.png"
         ],
         "about":"Communication avec une API pour rendre le portfolio d'une architecte d'intérieur dynamique et intéractif, grâce à JavaScript.",
         "description":"Second projet de la formation OpenClassrooms 'Développeur Web Junior'.",
@@ -86,9 +86,9 @@
         "id": "3",
         "title":"Kasa",
         "pictures": [
-            "/images/homepage-kasa.jpg",
-            "/images/about-kasa.jpg",
-            "/images/location-kasa.jpg"
+            "/images/projets/kasa/kasa_homepage.jpg",
+            "/images/projets/kasa/kasa_location-page.jpg",
+            "/images/projets/kasa/kasa_about-page.jpg"
         ],
         "about":"Intégration de l'interface utilisateur d'une application web de location immobilière avec React, conformément à une maquette.",
         "description":"Quatrième projet de la formation OpenClassrooms 'Développeur Web Junior'.",

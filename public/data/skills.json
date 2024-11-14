@@ -4,19 +4,19 @@
         "techs": [
             {
                 "name":"HTML",
-                "logo":"/images/html5_icon.svg"
+                "logo":"/images/skills_logo/html5_icon.svg"
             },
             {
                 "name":"CSS",
-                "logo":"/images/css3_icon.svg"
+                "logo":"/images/skills_logo/css3_icon.svg"
             },
             {
                 "name":"JavaScript",
-                "logo":"/images/js_icon.svg"
+                "logo":"/images/skills_logo/js_icon.svg"
             },
             {
                 "name":"React",
-                "logo":"/images/react_icon.svg"
+                "logo":"/images/skills_logo/react_icon.svg"
             }
         ]
     },
@@ -25,15 +25,15 @@
         "techs":[
             {
                 "name":"Node.js",
-                "logo":"/images/nodejs_icon.svg"
+                "logo":"/images/skills_logo/nodejs_icon.svg"
             },
             {
                 "name":"Express.js",
-                "logo":"/images/express_icon.svg"
+                "logo":"/images/skills_logo/express_icon.svg"
             },
             {
                 "name":"MongoDB",
-                "logo":"/images/mongodb_icon.svg"
+                "logo":"/images/skills_logo/mongodb_icon.svg"
             }
         ]
     },
@@ -42,19 +42,19 @@
         "techs":[
             {
                 "name":"VSCode",
-                "logo":"/images/vscode_icon.svg"
+                "logo":"/images/skills_logo/vscode_icon.svg"
             },
             {
                 "name":"Git",
-                "logo":"/images/git_icon.svg"
+                "logo":"/images/skills_logo/git_icon.svg"
             },
             {
                 "name":"GitHub",
-                "logo":"/images/github_icon.svg"
+                "logo":"/images/skills_logo/github_icon.svg"
             },
             {
                 "name":"Sass",
-                "logo":"/images/sass_icon.svg"
+                "logo":"/images/skills_logo/sass_icon.svg"
             }
         ]
     }
