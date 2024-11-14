@@ -76,7 +76,7 @@ const ContactForm = () => {
   }
 
   return (
-    <div className={`contact`}>
+    <div className="contact">
       <form
         className="contact-form"
         ref={form}

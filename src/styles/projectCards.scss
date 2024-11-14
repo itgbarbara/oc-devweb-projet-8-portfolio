@@ -1,120 +1,107 @@
 @import './config.scss';
 
-.cards-layout {
+.cards-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, minmax(300px, 1fr)); // A CHANGER
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
     justify-items: center;
     border-radius: 25px;
-    padding: 1.25rem;
     column-gap: 2%;
     row-gap: 1rem;
 
     @include for-tablets {
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        padding: 1rem;
+    }
+}
+
+.project-card {
+    @include flex-column;
+    justify-content: space-between;
+    background-color: white;
+    width: 100%;
+    max-width: 600px;
+    aspect-ratio: 2 / 1.6;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s ease-in-out, active 0.1s ease-in-out;
+
+    &:hover {
+        @include hover-card;
     }
 
-    @include for-smartphones {
-        background-color: transparent;
-        grid-template-columns: 1fr;
-        padding: 0;
-        gap: 20px;
+    &:hover .project-card__overlay {
+        opacity: 1;
     }
 
-    .card-link {
-        max-width: 100%;
+    &:hover .project-card__title {
+        // transform: translateY(-300%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 2.2rem;
+        color: $neutral-color;
+    }
 
-        .card {
-            @include flex-column;
-            justify-content: space-between;
-            background-color: white;
-            width: 100%;
-            max-width: 600px;
-            aspect-ratio: 2 / 1.6;
+    &:active {
+        transform: scale(1);
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        border-radius: inherit;
+    }
+
+    &__title {
+        color: black; // A CHANGER
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 1.25rem;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        // transition: all .2s ease-in-out;
+        // z-index: 2;
+
+        @include for-small-tablets {
+            font-size: 1.13rem;
+        }
+    }
+
+    &__overlay {
+        @include overlay;
+        @include flex-column(flex-start);
+        border-radius: inherit;
+        justify-content: flex-end;
+        background: rgba(darken($main-color,20%), 0.8);
+        opacity: 0;
+        padding: 1.25rem;
+        transition: opacity .2s ease-in-out;
+    }
+
+    &__description {
+        // font-size: 0.85rem;
+        color: $neutral-color;
+        margin-bottom: 1rem;
+
+        @include for-small-tablets {
+            font-size: 0.85em;
+        }
+    }
+
+    &__tags {
+        color: $main-color;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.8rem;
+
+        li {
+            font-size: 0.85rem;
+            background-color: $neutral-color;
+            padding: 0.2rem 0.5rem;
             border-radius: 5px;
-            overflow: hidden;
-            position: relative;
-            transition: all 0.2s ease-in-out, active 0.1s ease-in-out;
-
-            &:hover {
-                @include hover-card;
-            }
-
-            &:hover .card__overlay {
-                opacity: 1;
-            }
-    
-            &:hover .card__title {
-                // transform: translateY(-300%);
-                position: absolute;
-                top: 0;
-                left: 0;
-                font-size: 2.2rem;
-                color: $neutral-color;
-            }
-
-            &:active {
-                transform: scale(1);
-            }
-    
-            &__img {
-                width: 100%;
-                height: auto;
-                object-fit: contain;
-                border-radius: inherit;
-            }
-        
-            &__title {
-                color: black; // A CHANGER
-                font-size: 1.13rem;
-                font-weight: 700;
-                padding: 1.25rem;
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                // transition: all .2s ease-in-out;
-                // z-index: 2;
-    
-                @include for-small-tablets {
-                    font-size: 0.85rem;
-                }
-            }
-
-            &__overlay {
-                @include overlay;
-                @include flex-column(flex-start);
-                border-radius: inherit;
-                justify-content: flex-end;
-                background: rgba(darken($main-color,20%), 0.8);
-                opacity: 0;
-                padding: 1.25rem;
-                transition: opacity .2s ease-in-out;
-            }
-
-            &__description {
-                // font-size: 0.85rem;
-                color: $neutral-color;
-                margin-bottom: 1rem;
-
-                @include for-small-tablets {
-                    font-size: 0.85em;
-                }
-            }
-
-            &__tags {
-                color: $main-color;
-                display: flex;
-                flex-wrap: wrap;
-                gap: 0.8rem;
-
-                li {
-                    font-size: 0.85rem;
-                    background-color: $neutral-color;
-                    padding: 0.2rem 0.5rem;
-                    border-radius: 5px;
-                }
-            }
         }
     }
 }
