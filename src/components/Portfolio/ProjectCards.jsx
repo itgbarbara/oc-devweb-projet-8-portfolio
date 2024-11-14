@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const ProjectCards = ({ data }) => {
   return (
-    <div className="cards-container">
+    <div className="project-cards-container">
       {data.map((project) => (
         <Link
           className="card-link"

@@ -6,29 +6,27 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 const TrainingCard = ({ data }) => {
   return (
-    <div>
+    <div className="training-cards-container">
       {data.map((training) => (
         <article key={`training-card-${training.id}`} className="training-card">
           <h3 className="training-card__title">{training.position}</h3>
-          <div className="training-card__en-tete">
-            <p className="training-card__en-tete--category">
-              {training.category}
-            </p>
-            <p className="training-card__en-tete--period">{training.period}</p>
+          <div className="training-card__subtitle">
+            <p className="training-card__category">{training.category}</p>
+            <p className="training-card__period">{training.period}</p>
             {training.organization && (
-              <div className="training-card__organization">
-                <img
-                  src={training.organization.logo}
-                  alt={`logo ${training.organization.name}`}
-                  className="training-card__organization--logo"
-                />
+              <div className="training-card__organization organization">
                 <a
-                  className="training-card__organization--url"
+                  className="organization__url"
                   href={training.organization.url}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <span className="training-card__organization--name">
+                  <img
+                    src={training.organization.logo}
+                    alt={`logo ${training.organization.name}`}
+                    className="organization__logo"
+                  />
+                  <span className="organization__name">
                     {training.organization.name}
                   </span>
                   <FontAwesomeIcon icon={faLink} />

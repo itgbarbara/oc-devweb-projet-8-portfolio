@@ -1,6 +1,6 @@
 @import './config.scss';
 
-.cards-container {
+.project-cards-container {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, minmax(300px, 1fr));
