@@ -8,7 +8,7 @@ import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 
 function Collapse({ label, children }) {
   // Déclaration d'une variable d'état pour gérer l'ouverture du composant
-  const [isOpen, setIsOpen] = useState(true)
+  const [isOpen, setIsOpen] = useState(false)
 
   return (
     <div className={`collapse`}>
