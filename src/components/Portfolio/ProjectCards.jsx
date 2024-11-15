@@ -21,9 +21,8 @@ const ProjectCards = ({ data }) => {
                 ))}
               </ul>
             </div>
-            <div className="project-card__overlay">
-              <h3 className="project-card__title">{project.title}</h3>
-            </div>
+            <div className="project-card__overlay"></div>
+            <h3 className="project-card__title">{project.title}</h3>
             <img
               className="project-card__img"
               src={project.pictures[0]}
