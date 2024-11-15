@@ -1,7 +1,7 @@
 // Hooks
 import { useState, useEffect } from 'react'
 // Components
-import TrainingCard from './TrainingCard'
+import TrainingCards from './TrainingCards'
 
 //
 
@@ -27,7 +27,7 @@ const TrainingSection = () => {
       <h2 className=" homepage-section__title homepage-section__title--training">
         Parcours
       </h2>
-      <TrainingCard data={training} />
+      <TrainingCards data={training} />
       <p>
         Si vous souhaitez en savoir plus sur mon parcours, consultez ma page{' '}
         <a

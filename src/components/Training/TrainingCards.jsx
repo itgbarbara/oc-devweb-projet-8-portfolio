@@ -4,7 +4,7 @@ import { faLink } from '@fortawesome/free-solid-svg-icons'
 
 //
 
-const TrainingCard = ({ data }) => {
+const TrainingCards = ({ data }) => {
   return (
     <div className="training-cards-container">
       {data.map((training) => (
@@ -45,4 +45,4 @@ const TrainingCard = ({ data }) => {
   )
 }
 
-export default TrainingCard
+export default TrainingCards
