@@ -15,9 +15,15 @@
     }
 
     @include for-small-tablets {
-        @include flex-column;
+        @include flex-column(center);
         font-size: 0.75rem;
         padding: 1rem;
+    }
+
+    p {
+        @include for-small-tablets {
+            text-align: center;
+        }
     }
 
     &__icons {
