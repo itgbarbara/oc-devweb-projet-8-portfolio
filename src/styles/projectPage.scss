@@ -86,7 +86,7 @@
     @include flex-row(center);
     flex-wrap: wrap;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-block: 2rem;
 
     &__link {
         @include button(inherit, transparent);
