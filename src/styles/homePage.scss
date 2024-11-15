@@ -93,6 +93,10 @@
     @include flex-column;
 }
 
+#contact p {
+    margin-bottom: 0.5rem;
+}
+
 .cta-btn {
     @include button($neutral-color, $main-color);
 

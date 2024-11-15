@@ -14,7 +14,7 @@ const ContactSection = () => {
       <h2 className=" homepage-section__title homepage-section__title--contact">
         Contact
       </h2>
-      <p>Vous souhaitez me confier un projet ?</p>
+      <p>Vous avez un projet ? Discutons-en !</p>
       <button onClick={openContactModal} className={`cta-btn cta-btn--contact`}>
         Ecrivez-moi !
       </button>
