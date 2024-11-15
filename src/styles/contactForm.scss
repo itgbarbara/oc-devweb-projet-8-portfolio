@@ -34,10 +34,6 @@
     &__field {
         @include form-field;
         width: 100%;
-        
-        &::placeholder {
-            color: lighten($accent-color,15%); // MIXIN
-        }
     
         &--message {
             overflow: scroll;
@@ -52,7 +48,7 @@
 
         &:disabled {
             color: #757575;
-            background-color: lighten($accent-color, 35%) !important;
+            background-color: adjust-color($color: $accent-color, $lightness: 35%) !important;
         }
     }
 }

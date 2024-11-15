@@ -1,3 +1,5 @@
+@import './config.scss';
+
 .back-to-top {
     color: $neutral-color;
     background-color: $main-color;
@@ -6,10 +8,14 @@
     border-radius: 50%;
     position: fixed;
     bottom: 150px;
-    right: 30px;
+    right: 16px;
     opacity: 0; // Bouton invisible par défaut
     visibility: hidden;
     transition: all 0.3s ease-in-out;
+
+    @include for-smartphones {
+        display: none;
+    }
 
     &:hover {
         color: $neutral-color;

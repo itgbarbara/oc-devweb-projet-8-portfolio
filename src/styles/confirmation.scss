@@ -19,12 +19,13 @@
 }
 
 .confirmation__wrapper {
+	max-width: 80%;
     color: $neutral-color;
 	background-color: rgba($main-color, 0.8);
     overflow: auto;
 	position: relative;
-	border-radius: 10px;
-	padding: 20px;
+	border-radius: 15px;
+	padding: 1.25rem;
 
 	&--show {
 		@include fadeIn;

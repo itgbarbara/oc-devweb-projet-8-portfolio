@@ -30,10 +30,14 @@ $title-font: 'Lexend Deca';
 }
 
 @mixin form-field {
-    color: darken($accent-color,15%);
+    color: adjust-color($color: $accent-color,  $lightness: -15%);
     background-color: white;
     padding: 0.5rem;
     border-radius: 5px;
+
+    &::placeholder {
+        color : adjust-color($color: $accent-color, $lightness: 30%);
+    }
 }
 
 @mixin button($color, $background-color) {

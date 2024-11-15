@@ -3,7 +3,7 @@
 .training-card {
     width: 100%;
     @include flex-column(flex-start);
-    border: 3px lighten($main-color, 30%) solid;
+    border: 3px adjust-color($color: $main-color, $lightness: 30%) solid;
     border-radius: 15px;
     padding: 1.25rem;
     margin-bottom: 1rem;
