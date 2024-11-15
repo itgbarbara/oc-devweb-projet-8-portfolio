@@ -30,8 +30,12 @@
         @include hover-card;
     }
 
-    &:hover .project-card__overlay {
+    &:hover .project-card__overlay-hover {
         opacity: 1;
+    }
+
+    &:hover .project-card__overlay {
+        opacity: 0;
     }
 
     &:hover .project-card__title {
@@ -41,6 +45,7 @@
         left: 0;
         font-size: 2.2rem;
         color: $neutral-color;
+        z-index: 4;
     }
 
     &:active {
@@ -54,23 +59,31 @@
         border-radius: inherit;
     }
 
+    &__overlay {
+        @include overlay;
+        opacity: 1;
+        border-radius: inherit;
+        background: linear-gradient(0deg, rgba(255,255,255,1) 5%, rgba(255,255,255,1) 15%, rgba(10,10,10,0), rgba(255,255,255,0) 80%);
+        z-index: 2;
+    }
+
     &__title {
-        color: black; // A CHANGER
-        font-size: 2rem;
+        color: black;
+        font-size: 1.25rem;
         font-weight: 700;
         padding: 1.25rem;
         position: absolute;
         left: 0;
         bottom: 0;
         // transition: all .2s ease-in-out;
-        // z-index: 2;
+        z-index: 3;
 
         @include for-small-tablets {
             font-size: 1.13rem;
         }
     }
 
-    &__overlay {
+    &__overlay-hover {
         @include overlay;
         @include flex-column(flex-start);
         border-radius: inherit;
