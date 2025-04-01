@@ -1,5 +1,5 @@
 // Assets
-import avatar from '../assets/images/avatar.jpg'
+import profil_pic from '../assets/images/profil_pic.jpg'
 // Hooks
 import { useContext } from 'react'
 // Context
@@ -13,7 +13,7 @@ const Introduction = () => {
 
   return (
     <section id="introduction" className="homepage-section introduction">
-      <img className="avatar" src={avatar} alt="avatar" />
+      <img className="avatar" src={profil_pic} alt="avatar" />
       <div className="about">
         <h1 className="homepage-section__title homepage-section__title--about">
           Barbara ALVAREZ | Développeuse Web Junior
