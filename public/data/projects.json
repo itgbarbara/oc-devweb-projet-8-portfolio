@@ -10,7 +10,7 @@
         "category":[
             {
                 "id": "1",
-                "name":"Intégration HTML/CSS"
+                "name":"Intégration maquette"
             }
         ],
         "tags": [
@@ -95,7 +95,7 @@
         "category":[
             {
                 "id": "1",
-                "name":"Intégration HTML/CSS"
+                "name":"Intégration maquette"
             },
             {
                 "id": "3",

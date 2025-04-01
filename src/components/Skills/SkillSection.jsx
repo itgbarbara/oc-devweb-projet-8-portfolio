@@ -27,7 +27,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="homepage-section skills">
       <h2 className="homepage-section__title homepage-section__title--skills">
-        Compétences
+        Technologies
       </h2>
       <SkillCards data={skills} layout="skillcards-layout" />
     </section>
