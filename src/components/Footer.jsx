@@ -8,7 +8,8 @@ const Footer = () => {
   return (
     <footer className="footer">
       <p className="footer__copyright">
-        &#169; 2024 | Barbara ALVAREZ | Tous droits réservés
+        &#169; 2024 | Barbara ALVAREZ | Tous droits réservés &#183; Réalisé avec
+        React
       </p>
       <div className="footer__icons">
         <a
