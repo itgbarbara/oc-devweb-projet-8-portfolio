@@ -52,12 +52,12 @@
             content: " • ";
         }
     
-        li:not(:last-child)::after {
-            content: " ;"
-        }
+        // li:not(:last-child)::after {
+        //     content: " ;"
+        // }
     
-        li:last-child::after {
-            content: "."
-        }
+        // li:last-child::after {
+        //     content: "."
+        // }
     }
 }

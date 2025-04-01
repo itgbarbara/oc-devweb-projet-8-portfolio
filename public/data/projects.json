@@ -115,18 +115,18 @@
         ],
         "objectives":[
             "Développer une interface utilisateur moderne et réactive en utilisant la librairie React",
-            "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en immitant le comportement d'un site web multi-page traditionnel",
-            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour produire du code plus lisible facile à maintenir",
+            "Créer une single-page application (SPA) avec une navigation fluide et dynamique, en imitant le comportement d'un site web multi-page traditionnel",
+            "Gérer les propriétés d'un composant (state local et props) et la logique de présentation des données (extraites d'un fichier JSON) pour produire du code plus lisible et facile à maintenir",
             "Améliorer l'expérience utilisateur en associant des animations à certains éléments intéractifs"
         ],
         "skills": [
             "Découpage d'une application en composants modulaires et réutilisables",
             "Configuration de la navigation entre les pages de l'application avec React Router",
             "Utilisation des props et des hooks de base (useState, useEffect, useParams, useContext...)",
-            "Organisation et optimisation du code avec Sass, en appliquant les méthodes DRY (utilisation de variables et de mixins) et BEM.",
+            "Organisation et optimisation du code avec Sass, en appliquant les méthodes DRY (utilisation de variables et de mixins) et BEM",
             "Intégration d'une interface responsive à l'aide des Media Queries"
         ],
-        "url":"",
+        "url":"https://oc-devweb-projet-5-kasa-react.vercel.app/",
         "repo":"https://github.com/itgbarbara/oc-devweb-projet-5-kasa-react"
     },
     {

@@ -93,7 +93,7 @@ const Project = () => {
             </div>
           </div>
           <div className="additionnal-information">
-            <Collapse label="Problématiques">
+            <Collapse label="Objectifs">
               <ul className="dropdown__content">
                 {projects[index].objectives.map((objectif) => (
                   <li key={`${objectif}-${projects[index].id}`}>{objectif}</li>
