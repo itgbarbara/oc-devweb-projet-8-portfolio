@@ -2,8 +2,21 @@
     {
         "id": "1",
         "title":"Booki",
+        "cover":"/images/projets/booki/booki_homepage.jpg",
         "pictures": [
-            "/images/projets/booki/booki_homepage.jpg"
+
+            {
+                "title":"Booki - desktop version",
+                "src":"/images/projets/booki/booki_desktop.png"
+            },
+            {
+                "title":"Booki - tablet version",
+                "src":"/images/projets/booki/booki_tablet.png"
+            },
+            {
+                "title":"Booki - smartphone version",
+                "src":"/images/projets/booki/booki_smartphone.png"
+            }
         ],
         "about":"Intégration de l'interface utilisateur d'un site de recherche d'hébergements et d'activités en HTML/CSS, conformément à une maquette.",
         "description":"Premier projet de la formation OpenClassrooms 'Développeur Web Junior'.",
@@ -41,8 +54,28 @@
     {
         "id": "2",
         "title":"Sophie Bluel",
+        "cover":"/images/projets/sophie_bluel/sophie-bluel_homepage-1.png",
         "pictures":[
-            "/images/projets/sophie_bluel/sophie-bluel_homepage-1.png"
+            {
+                "title":"Portfolio architecte Sophie Bluel - homepage version desktop",
+                "src":"/images/projets/sophie_bluel/sophie-bluel_homepage.png"
+            },
+            {
+                "title":"Portfolio architecte Sophie Bluel - login version desktop",
+                "src":"/images/projets/sophie_bluel/sophie-bluel_login.png"
+            },
+            {
+                "title":"Portfolio architecte Sophie Bluel - modale de gestion des travaux",
+                "src":"/images/projets/sophie_bluel/sophie-bluel_modal-1.png"
+            },
+            {
+                "title":"Portfolio architecte Sophie Bluel - modale de gestion des travaux (ajout d'un projet 1)",
+                "src":"/images/projets/sophie_bluel/sophie-bluel_modal-2.png"
+            },
+            {
+                "title":"Portfolio architecte Sophie Bluel - modale de gestion des travaux (ajout d'un projet 2)",
+                "src":"/images/projets/sophie_bluel/sophie-bluel_modal-3.png"
+            }
         ],
         "about":"Communication avec une API pour rendre le portfolio d'une architecte d'intérieur dynamique et intéractif, grâce à JavaScript.",
         "description":"Second projet de la formation OpenClassrooms 'Développeur Web Junior'.",
@@ -66,9 +99,9 @@
         ],
         "objectives":[
             "Rendre une page web dynamique et intéractive avec JavaScript, sans utiliser de framework, à partir de la version statique du site d'origine (code HTML / CSS existant)",
-            "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte",
             "Permettre à l'utilisateur d'afficher et de filtrer les travaux sur la page d'accueil",
-            "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie à l'aide d'une boîte de dialogue modale (à créer)",
+            "Développer une version fonctionnelle de la gestion de la galerie des travaux de l'architecte dans une boîte de dialogue modale",
+            "Permettre à l'administrateur du site de s'authentifier en récupérant un token, pour pouvoir ajouter ou supprimer des travaux à la galerie",
             "Sauvegarder les données récupérées via l'API dans la mémoire locale du navigateur pour optimiser le chargement de la galerie ou maintenir l'administrateur connecté",
             "Tester les nouvelles fonctionnalités grâce à la mise à disposition d'une API http et de sa documentation"
         ],
@@ -85,10 +118,20 @@
     {
         "id": "3",
         "title":"Kasa",
+        "cover":"/images/projets/kasa/kasa_homepage.jpg",
         "pictures": [
-            "/images/projets/kasa/kasa_homepage.jpg",
-            "/images/projets/kasa/kasa_location-page.jpg",
-            "/images/projets/kasa/kasa_about-page.jpg"
+            {
+                "title":"Kasa - homepage version desktop",
+                "src":"/images/projets/kasa/kasa_homepage_desktop.png"
+            },
+            {
+                "title":"Kasa - page location version desktop",
+                "src":"/images/projets/kasa/kasa_accomodation_desktop.png"
+            },
+            {
+                "title":"Kasa - page à propos version desktop",
+                "src":"/images/projets/kasa/kasa_about_desktop.png"
+            }
         ],
         "about":"Intégration de l'interface utilisateur d'une application web de location immobilière avec React, conformément à une maquette.",
         "description":"Quatrième projet de la formation OpenClassrooms 'Développeur Web Junior'.",
@@ -110,6 +153,7 @@
             "Sass"
         ],
         "technos":[
+            "CSS",
             "React",
             "Sass"
         ],
@@ -132,6 +176,7 @@
     {
         "id": "4",
         "title":"Mon Vieux Grimoire",
+        "cover":"/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_homepage.png",
         "pictures":[
             "/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_homepage.png",
             "/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_book.png",

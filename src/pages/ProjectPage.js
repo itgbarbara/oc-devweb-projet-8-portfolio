@@ -1,5 +1,6 @@
 // Hooks
-import { useContext } from 'react'
+// Hooks
+import { useState, useEffect, useContext } from 'react'
 // Librairies externes
 import { useParams, Navigate } from 'react-router-dom'
 import { Link } from 'react-router-dom'
@@ -27,6 +28,23 @@ const Project = () => {
   const { projects, loading } = useContext(DataContext)
 
   const nbProjects = projects.length
+
+  // Déclaration de variables d'état
+  const [technos, setTechnos] = useState([]) // Pour stocker les technos
+
+  // Simulation appels API
+  useEffect(() => {
+    fetch('/data/technos.json').then((response) =>
+      response
+        .json()
+        .then((technos) => {
+          setTechnos(technos)
+        })
+        .catch((err) => {
+          console.log('Error: ', err)
+        })
+    )
+  }, [])
 
   // Méthode pour trouver l'index de l'élément dont l'id est dans l'url de la fiche projet
   const index = projects.findIndex((project) => project.id === id)
@@ -85,12 +103,22 @@ const Project = () => {
               <p>{projects[index].about}</p>
               <p>{projects[index].description}</p>
             </div>
-            <div className="project__gallery">
-              <img
-                src={projects[index].pictures[0]}
-                alt={projects[index].title}
-              />
-            </div>
+            <ul className="project__tech tech">
+              {projects[index].technos.map((techName) => {
+                const tech = technos.find((t) => t.name === techName)
+                return (
+                  tech && (
+                    <li key={`${tech.name}-${projects[index].id}`}>
+                      <img
+                        className="tech__logo"
+                        src={tech.logo}
+                        alt={tech.name}
+                      />
+                    </li>
+                  )
+                )
+              })}
+            </ul>
           </div>
           <div className="additionnal-information">
             <Collapse label="Objectifs">
@@ -104,13 +132,6 @@ const Project = () => {
               <ul className="dropdown__content">
                 {projects[index].skills.map((skill) => (
                   <li key={`${skill}-${projects[index].id}`}>{skill}</li>
-                ))}
-              </ul>
-            </Collapse>
-            <Collapse label="Technologies utilisées">
-              <ul className="dropdown__content">
-                {projects[index].technos.map((techno) => (
-                  <li key={`${techno}-${projects[index].id}`}>{techno}</li>
                 ))}
               </ul>
             </Collapse>
@@ -138,6 +159,16 @@ const Project = () => {
             <span>Repo GitHub</span>
           </a>
         </div>
+        {projects[index].pictures && (
+          <ul className="project__gallery">
+            {projects[index].pictures.map((image) => (
+              <li key={`${image.title}-${projects[index].id}`}>
+                {' '}
+                <img src={image.src} alt={image.title} />
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </Layout>
   )
