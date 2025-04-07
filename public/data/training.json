@@ -1,18 +1,22 @@
 [
     {
         "id":"1",
-        "category":"Formation",
+        "category":"Diplôme",
         "period":"2024",
-        "position":"Formation diplômante 'Développeur web'",
+        "position":"Obtention d'une certification professionnelle reconnue par l'Etat niveau 5 (bac+2) en Développement web",
         "organization": {
             "name":"OpenClassrooms",
             "logo":"/images/training_logo/logo_openclassrooms.png",
             "url":"https://openclassrooms.com/fr/paths/899-developpeur-web"
         },
         "description":[
-            "Formation à distance en vue de l'obtention d'un titre RNCP de niveau 5 (bac+2).",
-            "Réalisation de projets professionnalisants, tirés de cas concrets d'entreprise.",
-            "Technologies : HTML, CSS, JavaScript, React, Git/GitHub, NodeJS, Express, MongoDB, API RESTful..."
+            "Formation diplômante à distance 'Développeur web' (6 mois à temps plein).",
+            "Réalisation de projets professionnalisants, tirés de cas concrets d'entreprise."
+        ],
+        "more":[
+            "Technologies : HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, API RESTful...",
+            "Outils : VS Code, Git/GitHub, Sass",
+            "Autres notions : optimisation des performances et du SEO, planification de projet (méthodologie Agile)..."
         ]
     },
     {

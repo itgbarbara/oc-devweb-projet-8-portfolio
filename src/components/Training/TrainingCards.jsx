@@ -1,3 +1,5 @@
+// Components
+import Collapse from '../Collapse'
 // Icônes Font Awesome
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLink } from '@fortawesome/free-solid-svg-icons'
@@ -39,6 +41,13 @@ const TrainingCards = ({ data }) => {
               <p key={item}>{item}</p>
             ))}
           </div>
+          {/* {training.more && (
+            <Collapse label="plus">
+              {training.more.map((item) => (
+                <p key={item}>{item}</p>
+              ))}
+            </Collapse>
+          )} */}
         </article>
       ))}
     </div>
