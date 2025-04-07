@@ -178,9 +178,18 @@
         "title":"Mon Vieux Grimoire",
         "cover":"/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_homepage.png",
         "pictures":[
-            "/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_homepage.png",
-            "/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_book.png",
-            "/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_addbook.png"
+            {
+                "title":"Mon Vieux Grimoire - homepage",
+                "src":"/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_homepage.png"
+            },
+            {
+                "title":"Mon Vieux Grimoire - page livre",
+                "src":"/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_book.png"
+            },
+            {
+                "title":"Mon Vieux Grimoire - ajout d'un livre",
+                "src":"/images/projets/mon_vieux_grimoire/mon-vieux-grimoire_addbook.png"
+            }
         ],
         "about":"Mise en place du back-end d'un site de référencement et de notation de livres avec Node.js et Express.",
         "description":"Cinquième projet de la formation OpenClassrooms 'Développeur Web Junior'.",
